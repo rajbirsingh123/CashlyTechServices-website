@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Custom Software &amp; Web Development | Cashly Tech Services</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="Cashly Tech Services builds custom software, web platforms, portals, internal tools, and product systems using React, Java, Python, Go, and cloud-ready architecture.">
+  <meta name="author" content="Cashly Tech Services">
+  <link rel="shortcut icon" type="image/x-icon" href="images/cashly-logo-nav.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="css/services-pages.css">
+  <style>
+    .main-nav {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(10, 18, 67, 0.08);
+      padding: 18px 0;
+    }
+
+    .main-nav .container-xxl {
+      display: flex;
+      align-items: center;
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      margin-right: 28px;
+    }
+
+    .brand-lockup img {
+      display: block;
+      height: 112px;
+      width: auto;
+    }
+
+    .navbar-nav .nav-link {
+      color: #050412;
+      font-weight: 700;
+      font-size: 17px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 12px 16px !important;
+      border-radius: 999px;
+      transition: 0.25s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus,
+    .navbar-nav .nav-link.active,
+    .navbar-nav .show > .nav-link {
+      color: #1148c8;
+      background: rgba(53, 133, 208, 0.08);
+    }
+
+    .dropdown-menu.mega-menu {
+      min-width: 720px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      border-radius: 26px;
+      background: rgba(255, 255, 255, 0.96);
+      box-shadow: 0 28px 70px rgba(10, 18, 67, 0.14);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 56px;
+      padding: 0 26px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #1148c8, #0b3190);
+      color: #fff;
+      font-weight: 800;
+      font-size: 16px;
+      box-shadow: 0 16px 32px rgba(10, 18, 67, 0.22);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .nav-cta:hover,
+    .nav-cta:focus {
+      transform: translateY(-2px);
+      color: #fff;
+    }
+
+    .footer-block {
+      margin-top: 32px;
+      padding: 0 0 34px;
+      background: #ffffff;
+      border-top: 1px solid rgba(15, 23, 42, 0.08);
+      box-shadow: 0 -14px 40px rgba(15, 23, 42, 0.04);
+    }
+
+    .footer-wrap {
+      padding-top: 42px;
+    }
+
+    .footer-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .footer-item {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.75;
+      color: #3f3f3f;
+    }
+
+    .footer-copy {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #3f3f3f;
+    }
+
+    .footer-title {
+      margin: 0 0 14px;
+      font-size: 17px;
+      font-weight: 800;
+      color: #050412;
+    }
+
+    .footer-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #050412;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .footer-item a {
+      color: #050412;
+      font-weight: 600;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      align-items: center;
+      margin-top: 30px;
+      padding: 18px 24px;
+      border-radius: 18px;
+      background: #0b3190;
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      margin: 0;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    @media (max-width: 991px) {
+      .brand-lockup {
+        margin-right: 0;
+      }
+
+      .brand-lockup img {
+        height: 92px;
+      }
+
+      .navbar-collapse {
+        background: rgba(255, 255, 255, 0.94);
+        border-radius: 22px;
+        padding: 16px;
+        margin-top: 14px;
+        box-shadow: 0 24px 60px rgba(10, 18, 67, 0.08);
+      }
+
+      .dropdown-menu.mega-menu {
+        min-width: 100%;
+        box-shadow: none;
+        border-radius: 18px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .brand-lockup img {
+        height: 82px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        display: block;
+      }
+
+      .footer-bottom p + p {
+        margin-top: 10px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="css/shared-navbar.css">
+</head>
+<body>
+  <div class="site-shell">
+    <nav class="navbar navbar-expand-lg main-nav fixed-top">
+      <div class="container-xxl">
+        <a class="navbar-brand brand-lockup" href="index.html" aria-label="Cashly Tech Services home">
+          <img src="images/cts_logo.png" alt="Cashly Tech Services logo">
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="ti-menu" style="font-size: 24px; color: #0f172a;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavigation">
+          <ul class="navbar-nav ml-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item dropdown service-dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html#services" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+              <div class="dropdown-menu mega-menu" aria-labelledby="servicesDropdown">
+                <div class="mega-grid">
+                  <a class="mega-item active" href="custom-software.html"><span class="menu-title">Custom Software &amp; Web</span><span class="menu-copy">Product platforms, dashboards, portals, and internal systems.</span></a>
+                  <a class="mega-item" href="mobile-development.html"><span class="menu-title">Mobile Development</span><span class="menu-copy">iOS, Android, native teams, and hybrid app delivery.</span></a>
+                  <a class="mega-item" href="native-app-development.html"><span class="menu-title">Native App Development</span><span class="menu-copy">SwiftUI, Jetpack Compose, deeper platform control, and device features.</span></a>
+                  <a class="mega-item" href="hybrid-app-development.html"><span class="menu-title">Hybrid App Development</span><span class="menu-copy">Flutter and React Native builds for faster multi-platform launches.</span></a>
+                  <a class="mega-item" href="ecommerce-development.html"><span class="menu-title">eCommerce Development</span><span class="menu-copy">Storefronts, checkout flows, subscriptions, and operations.</span></a>
+                  <a class="mega-item" href="crm-development.html"><span class="menu-title">CRM Development</span><span class="menu-copy">Sales workflows, servicing visibility, and team automation.</span></a>
+                  <a class="mega-item" href="api-integration.html"><span class="menu-title">API Integration</span><span class="menu-copy">Connected systems, partner APIs, middleware, and sync logic.</span></a>
+                  <a class="mega-item" href="data-cloud.html"><span class="menu-title">Data &amp; Cloud</span><span class="menu-copy">AWS, Azure, data pipelines, reporting, and secure architecture.</span></a>
+                  <a class="mega-item" href="ai-automation.html"><span class="menu-title">AI Workflows &amp; Automation</span><span class="menu-copy">n8n, copilots, routing logic, and human-in-the-loop automation.</span></a>
+                  <a class="mega-item" href="seo-web-growth.html"><span class="menu-title">SEO &amp; Web Growth</span><span class="menu-copy">Technical SEO, landing pages, content systems, and conversion lift.</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ml-lg-2"><a class="nav-cta" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2PwLnMIboXJYLmTsCPplmIsfxdOpZLqBosbVhaP4f5xH1Wp7McyVyYGjV9aMC20yGazrkx0koT" target="_blank" rel="noreferrer">Book a Call</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="section page-hero">
+        <div class="container-xxl">
+          <div class="hero-grid">
+            <div class="hero-card">
+              <div class="eyebrow">Custom Software &amp; Web</div>
+              <h1 class="hero-title">Custom web platforms and business software built around how your team actually works.</h1>
+              <p class="hero-copy">We design and build bespoke software for companies that need more than off-the-shelf tooling. That includes portals, workflow-heavy web applications, internal dashboards, product MVPs, and operational platforms engineered for scale.</p>
+              <div class="hero-actions">
+                <a class="button-primary" href="contact.html">Start a Project With Us</a>
+                <a class="button-secondary" href="contact.html">Hire a Team on Project</a>
+              </div>
+            </div>
+            <div class="hero-card hero-side">
+              <div class="stack-network" aria-hidden="true">
+                <div id="core-stack-graph" class="stack-network-canvas"></div>
+                <div class="stack-glow one"></div>
+                <div class="stack-glow two"></div>
+              </div>
+              <div class="stack-content">
+                <div class="section-kicker">Core Stack</div>
+                <h3>Modern web delivery with backend discipline.</h3>
+                <p>Our typical builds combine React on the frontend with Java, Python, or Go services behind the scenes, plus API-first architecture and cloud-ready deployment.</p>
+                <div class="tag-list">
+                  <span>React</span>
+                  <span>Java</span>
+                  <span>Python</span>
+                  <span>Go</span>
+                  <span>MongoDB</span>
+                  <span>AWS / Azure</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container-xxl">
+          <div class="section-intro">
+            <div>
+              <div class="section-kicker">What We Build</div>
+              <h2>Software delivery shaped by operations, product logic, and long-term maintainability.</h2>
+            </div>
+            <p>We focus on systems that solve workflow friction, reduce handoffs, and give teams a better operating layer than spreadsheets and disconnected tools.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card"><div class="icon"><span class="ti-layout-grid2"></span></div><h3>Business Portals</h3><p>Customer dashboards, admin panels, B2B workspaces, and role-based web applications designed around real business journeys.</p></article>
+            <article class="feature-card"><div class="icon"><span class="ti-settings"></span></div><h3>Internal Platforms</h3><p>Operational software for approvals, fulfillment, sales support, reporting, onboarding, and workflow control across departments.</p></article>
+            <article class="feature-card"><div class="icon"><span class="ti-rocket"></span></div><h3>Product MVPs</h3><p>Launchable software products with sensible architecture, fast iteration loops, and a path from early release to production maturity.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container-xxl">
+          <div class="stack-grid">
+            <div class="stack-card">
+              <div class="section-kicker">Delivery Focus</div>
+              <h3>How we keep custom builds practical.</h3>
+              <ul class="check-list">
+                <li>Architecture decisions aligned to product complexity, not engineering vanity.</li>
+                <li>Frontend systems tuned for usability, handoff clarity, and measurable business flows.</li>
+                <li>Backend services designed for integrations, reporting, security, and future expansion.</li>
+                <li>Clean environments for staging, QA, release management, and ongoing support.</li>
+              </ul>
+            </div>
+            <div class="stack-card">
+              <div class="section-kicker">Technology Mix</div>
+              <h3>Common technologies we use for software engagements.</h3>
+              <div class="stack-list">
+                <span>React Web Apps</span>
+                <span>Java Services</span>
+                <span>Python Automation</span>
+                <span>Go APIs</span>
+                <span>MongoDB</span>
+                <span>Cloud Deployment</span>
+                <span>Analytics</span>
+                <span>SEO-aware Frontends</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container-xxl">
+          <div class="engagement-grid">
+            <div class="engagement-card"><div class="section-kicker">Project Build</div><h3>Start with a defined scope.</h3><p>Ideal for portal builds, internal systems, product rewrites, and modernization efforts that need roadmap clarity, design, engineering, and launch ownership.</p></div>
+            <div class="engagement-card"><div class="section-kicker">Dedicated Team</div><h3>Add an execution squad to your roadmap.</h3><p>Use us as an extension of your business when you need a reliable product team across discovery, frontend, backend, QA, and deployment.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container-xxl">
+          <div class="cta-panel">
+            <div class="section-kicker">Next Step</div>
+            <h2>Need a software partner who can move from requirements to release without losing the business context?</h2>
+            <p>We can help you shape the scope, define the architecture, and deliver a production-ready system with the right team around it.</p>
+            <div class="hero-actions">
+              <a class="button-primary" href="contact.html">Start a Project With Us</a>
+              <a class="button-secondary" href="team.html">Meet the Team</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-block">
+      <div class="container-xxl">
+        <div class="footer-wrap">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a class="brand-lockup" href="#top"><img src="images/cts_logo.png" alt="Cashly Tech Services logo"></a>
+              <p class="footer-copy">Cashly Tech Services builds modern business software, mobile apps, AI workflows, data systems, and cloud-ready platforms with a sharp focus on execution, usability, and growth.</p>
+            </div>
+            <div>
+              <h3 class="footer-title">Contact</h3>
+              <div class="footer-list">
+                <p class="footer-item"><strong>Email</strong><a href="mailto:info@gocashly.io">info@gocashly.io</a></p>
+                <p class="footer-item"><strong>Phone</strong><a href="tel:+12184133596">+1 218-413-3596</a></p>
+              </div>
+            </div>
+            <div>
+              <h3 class="footer-title">Office</h3>
+              <div class="footer-list">
+                <p class="footer-item"><strong>Address</strong>2896 South Sheridan Way<br>Oakville, ON L6J 7T4</p>
+                <p class="footer-item"><strong>Product</strong><a href="https://cashlycrm.com" target="_blank" rel="noreferrer">cashlycrm.com</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom"><p>&copy; 2026 Cashly Tech Services. All rights reserved.</p></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="js/graph-route-animation.js"></script>
+  <script>
+    if (window.CashlyGraphRouteAnimation) {
+      window.CashlyGraphRouteAnimation.init("core-stack-graph", {
+        columns: 5,
+        minNodesPerColumn: 2,
+        maxNodesPerColumn: 4,
+        nodeRadiusMin: 4.2,
+        nodeRadiusMax: 7.2,
+        routeDuration: 3400,
+        routePause: 850
+      });
+    }
+  </script>
+</body>
+</html>

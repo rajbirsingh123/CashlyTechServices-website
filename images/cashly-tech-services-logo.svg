@@ -1,0 +1,21 @@
+<svg width="432" height="96" viewBox="0 0 432 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cashly-mark-gradient" x1="16" y1="12" x2="84" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#19C1A7"/>
+      <stop offset="0.55" stop-color="#1F5EFF"/>
+      <stop offset="1" stop-color="#0E3CA8"/>
+    </linearGradient>
+    <linearGradient id="cashly-smile-gradient" x1="80" y1="54" x2="220" y2="72" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F5EFF"/>
+      <stop offset="1" stop-color="#19C1A7"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="12" y="12" width="56" height="56" rx="18" fill="url(#cashly-mark-gradient)"/>
+  <path d="M50.9006 29.3091C44.8875 24.5153 35.7209 24.7758 29.9897 30.1226C23.968 35.7405 23.6415 45.1789 29.2602 51.2002C34.879 57.2215 44.3176 57.5481 50.339 51.9293L47.2 48.5655C42.9783 52.504 36.3617 52.2751 32.4238 48.0535C28.4859 43.8318 28.7148 37.2154 32.9365 33.277C36.9547 29.5279 43.1613 29.5297 47.1327 33.1418L50.9006 29.3091Z" fill="white"/>
+  <circle cx="53.5" cy="27.5" r="4.5" fill="white"/>
+
+  <text x="84" y="42" fill="#11316A" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" letter-spacing="-1.5">cashly</text>
+  <path d="M85 55C113.434 69.676 168.571 72.6831 219 54.8" stroke="url(#cashly-smile-gradient)" stroke-width="6" stroke-linecap="round"/>
+  <text x="86" y="78" fill="#4C6386" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="4.5">TECH SERVICES</text>
+</svg>

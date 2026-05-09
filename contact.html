@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact | Cashly Tech Services</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="Contact Cashly Tech Services to discuss custom software, CRM systems, API integrations, AI workflows, mobile development, and cloud delivery.">
+  <meta name="author" content="Cashly Tech Services">
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/cashly-logo-nav.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f3f6f9;
+      --bg-soft: #eef2f7;
+      --surface: rgba(255, 255, 255, 0.9);
+      --surface-solid: #ffffff;
+      --text: #050412;
+      --muted: #3f3f3f;
+      --line: rgba(10, 18, 67, 0.12);
+      --primary: #1148c8;
+      --primary-deep: #0b3190;
+      --secondary: #56c4ff;
+      --accent: #9ec6ec;
+      --shadow: 0 24px 60px rgba(10, 18, 67, 0.08);
+      --radius-xl: 32px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --container: 1240px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Space Grotesk", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(53, 133, 208, 0.1), transparent 28%),
+        radial-gradient(circle at top right, rgba(10, 18, 67, 0.08), transparent 25%),
+        linear-gradient(180deg, #f7f9fc 0%, #f1f5f8 42%, #f7f9fc 100%);
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Space Grotesk", sans-serif;
+      color: var(--text);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    a,
+    a:hover,
+    a:focus {
+      text-decoration: none;
+    }
+
+    .section {
+      padding: 96px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .site-shell {
+      position: relative;
+    }
+
+    .site-shell::before,
+    .site-shell::after {
+      content: "";
+      position: fixed;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.55;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .site-shell::before {
+      top: -120px;
+      right: -80px;
+      background: rgba(53, 133, 208, 0.1);
+    }
+
+    .site-shell::after {
+      left: -120px;
+      bottom: 8%;
+      background: rgba(10, 18, 67, 0.08);
+    }
+
+    .container-xxl {
+      width: min(var(--container), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .main-nav {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(10, 18, 67, 0.08);
+      padding: 18px 0;
+    }
+
+    .main-nav .container-xxl {
+      display: flex;
+      align-items: center;
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      margin-right: 28px;
+    }
+
+    .brand-lockup img {
+      display: block;
+      height: 112px;
+      width: auto;
+    }
+
+    .navbar-collapse {
+      align-items: center;
+    }
+
+    .navbar-nav {
+      align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+      color: var(--text);
+      font-weight: 700;
+      font-size: 17px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 12px 16px !important;
+      border-radius: 999px;
+      transition: 0.25s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus,
+    .navbar-nav .nav-link.active,
+    .navbar-nav .show > .nav-link {
+      color: var(--primary);
+      background: rgba(53, 133, 208, 0.08);
+    }
+
+    .service-dropdown .dropdown-toggle::after {
+      margin-left: 8px;
+    }
+
+    .dropdown-menu.mega-menu {
+      min-width: 720px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      border-radius: 26px;
+      background: rgba(255, 255, 255, 0.96);
+      box-shadow: 0 28px 70px rgba(10, 18, 67, 0.14);
+      backdrop-filter: blur(18px);
+    }
+
+    .mega-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .mega-item {
+      display: block;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #f9fbff 0%, #f3f7ff 100%);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .mega-item:hover,
+    .mega-item:focus {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+    }
+
+    .mega-item .menu-title {
+      display: block;
+      color: var(--text);
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    .mega-item .menu-copy {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    @media (min-width: 992px) {
+      .navbar-expand-lg .navbar-collapse {
+        flex: 1 1 auto;
+        display: flex !important;
+        justify-content: center;
+      }
+
+      .navbar-expand-lg .navbar-nav {
+        margin: 0 auto;
+        gap: 2px;
+      }
+
+      .navbar-expand-lg .navbar-nav .nav-item {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-expand-lg .navbar-nav .nav-item.ml-lg-2 {
+        margin-left: 18px !important;
+      }
+
+      .service-dropdown:hover > .dropdown-menu.mega-menu {
+        display: block;
+      }
+
+      .dropdown-menu.mega-menu {
+        margin-top: 12px;
+      }
+    }
+
+    .nav-cta,
+    .button-primary,
+    .button-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: 0.25s ease;
+    }
+
+    .nav-cta,
+    .button-primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary-deep));
+      color: #fff;
+      box-shadow: 0 16px 32px rgba(10, 18, 67, 0.22);
+    }
+
+    .nav-cta {
+      min-height: 56px;
+      padding: 0 26px;
+    }
+
+    .button-primary,
+    .button-secondary {
+      min-height: 56px;
+      padding: 0 28px;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .button-secondary {
+      background: rgba(255, 255, 255, 0.84);
+      color: var(--text);
+      border: 1px solid rgba(15, 23, 42, 0.08);
+    }
+
+    .button-primary:hover,
+    .button-secondary:hover,
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      color: inherit;
+    }
+
+    .button-primary:hover,
+    .nav-cta:hover {
+      color: #fff;
+    }
+
+    .page-hero {
+      padding-top: 154px;
+      padding-bottom: 86px;
+    }
+
+    .hero-grid,
+    .contact-grid,
+    .details-grid,
+    .cta-grid {
+      display: grid;
+      gap: 24px;
+    }
+
+    .hero-grid,
+    .contact-grid,
+    .cta-grid {
+      grid-template-columns: 1.02fr 0.98fr;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(53, 133, 208, 0.16);
+      color: var(--primary-deep);
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      box-shadow: 0 16px 32px rgba(10, 18, 67, 0.05);
+    }
+
+    .pulse {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      box-shadow: 0 0 0 10px rgba(86, 196, 255, 0.14);
+    }
+
+    .hero-title {
+      margin: 22px 0;
+      font-size: clamp(42px, 6vw, 70px);
+      line-height: 1.02;
+      max-width: 760px;
+    }
+
+    .accent-text {
+      background: linear-gradient(135deg, var(--primary-deep), var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-copy {
+      max-width: 650px;
+      font-size: 18px;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .glass-panel,
+    .contact-card,
+    .form-panel,
+    .map-panel,
+    .cta-panel {
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+    }
+
+    .glass-panel,
+    .form-panel,
+    .map-panel,
+    .cta-panel {
+      padding: 30px;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(16px);
+      opacity: 0.9;
+    }
+
+    .hero-orb.one {
+      width: 220px;
+      height: 220px;
+      top: 8%;
+      left: 8%;
+      background: rgba(86, 196, 255, 0.24);
+    }
+
+    .hero-orb.two {
+      width: 250px;
+      height: 250px;
+      right: 0;
+      bottom: 12%;
+      background: rgba(10, 18, 67, 0.12);
+    }
+
+    .hero-visual img {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 620px;
+      filter: drop-shadow(0 28px 58px rgba(10, 18, 67, 0.16));
+    }
+
+    .section-intro {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: end;
+      margin-bottom: 38px;
+    }
+
+    .section-kicker {
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .section-intro h2 {
+      font-size: clamp(30px, 4vw, 52px);
+      margin-bottom: 0;
+      max-width: 760px;
+    }
+
+    .section-intro p {
+      max-width: 460px;
+      margin-bottom: 0;
+    }
+
+    .details-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-card {
+      padding: 28px;
+      min-height: 100%;
+    }
+
+    .contact-card .icon {
+      display: inline-flex;
+      width: 52px;
+      height: 52px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      border-radius: 16px;
+      color: var(--primary);
+      font-size: 20px;
+      background: linear-gradient(135deg, rgba(17, 72, 200, 0.12), rgba(86, 196, 255, 0.18));
+    }
+
+    .contact-card h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .contact-card a {
+      color: var(--primary-deep);
+      font-weight: 700;
+    }
+
+    .form-panel form {
+      display: grid;
+      gap: 18px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 15px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(10, 18, 67, 0.12);
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: rgba(17, 72, 200, 0.35);
+      box-shadow: 0 0 0 4px rgba(17, 72, 200, 0.08);
+    }
+
+    textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    .form-note {
+      margin-top: 14px;
+      font-size: 14px;
+    }
+
+    .map-panel iframe {
+      width: 100%;
+      min-height: 420px;
+      border: 0;
+      border-radius: 20px;
+    }
+
+    .cta-grid {
+      align-items: stretch;
+    }
+
+    .cta-panel.primary {
+      background:
+        radial-gradient(circle at top right, rgba(53, 133, 208, 0.16), transparent 30%),
+        linear-gradient(135deg, #ffffff 0%, #f4f8ff 100%);
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 22px 0 0;
+      padding: 0;
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 34px;
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .check-list li::before {
+      content: "\e64c";
+      font-family: themify;
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--secondary);
+      font-size: 16px;
+    }
+
+    .footer-block {
+      margin-top: 32px;
+      padding: 0 0 34px;
+      background: #ffffff;
+      border-top: 1px solid rgba(15, 23, 42, 0.08);
+      box-shadow: 0 -14px 40px rgba(15, 23, 42, 0.04);
+    }
+
+    .footer-wrap {
+      padding-top: 42px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr 0.85fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .footer-brand {
+      max-width: 460px;
+    }
+
+    .footer-brand .brand-lockup {
+      display: inline-flex;
+      margin-bottom: 18px;
+    }
+
+    .footer-copy {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    .footer-title {
+      margin: 0 0 14px;
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .footer-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .footer-item {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    .footer-item a {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .footer-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--text);
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      align-items: center;
+      margin-top: 30px;
+      padding: 18px 24px;
+      border-radius: 18px;
+      background: var(--primary-deep);
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      margin: 0;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    @media (max-width: 1199px) {
+      .hero-grid,
+      .contact-grid,
+      .cta-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .brand-lockup img {
+        height: 92px;
+      }
+
+      .brand-lockup {
+        margin-right: 0;
+      }
+
+      .navbar-collapse {
+        background: rgba(255, 255, 255, 0.94);
+        border-radius: 22px;
+        padding: 16px;
+        margin-top: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .dropdown-menu.mega-menu {
+        min-width: 100%;
+        box-shadow: none;
+        border-radius: 18px;
+      }
+
+      .mega-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-cta {
+        width: 100%;
+        margin-top: 12px;
+      }
+
+      .section-intro {
+        display: block;
+      }
+
+      .section-intro p {
+        margin-top: 14px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .section {
+        padding: 78px 0;
+      }
+
+      .brand-lockup img {
+        height: 82px;
+      }
+
+      .page-hero {
+        padding-top: 132px;
+      }
+
+      .hero-title {
+        font-size: 42px;
+      }
+
+      .details-grid,
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        display: block;
+      }
+
+      .footer-bottom p + p {
+        margin-top: 10px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="css/shared-navbar.css">
+</head>
+
+<body>
+  <div class="site-shell">
+    <nav class="navbar navbar-expand-lg main-nav fixed-top">
+      <div class="container-xxl">
+        <a class="navbar-brand brand-lockup" href="index.html" aria-label="Cashly Tech Services home">
+          <img src="images/cts_logo.png" alt="Cashly Tech Services logo">
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="ti-menu" style="font-size: 24px; color: #0f172a;"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavigation">
+          <ul class="navbar-nav ml-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item dropdown service-dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html#services" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+              <div class="dropdown-menu mega-menu" aria-labelledby="servicesDropdown">
+                <div class="mega-grid">
+                  <a class="mega-item" href="custom-software.html"><span class="menu-title">Custom Software &amp; Web</span><span class="menu-copy">Product platforms, dashboards, portals, and internal systems.</span></a>
+                  <a class="mega-item" href="mobile-development.html"><span class="menu-title">Mobile Development</span><span class="menu-copy">iOS, Android, native teams, and hybrid app delivery.</span></a>
+                  <a class="mega-item" href="native-app-development.html"><span class="menu-title">Native App Development</span><span class="menu-copy">SwiftUI, Jetpack Compose, deeper platform control, and device features.</span></a>
+                  <a class="mega-item" href="hybrid-app-development.html"><span class="menu-title">Hybrid App Development</span><span class="menu-copy">Flutter and React Native builds for faster multi-platform launches.</span></a>
+                  <a class="mega-item" href="ecommerce-development.html"><span class="menu-title">eCommerce Development</span><span class="menu-copy">Storefronts, checkout flows, subscriptions, and operations.</span></a>
+                  <a class="mega-item" href="crm-development.html"><span class="menu-title">CRM Development</span><span class="menu-copy">Sales workflows, servicing visibility, and team automation.</span></a>
+                  <a class="mega-item" href="api-integration.html"><span class="menu-title">API Integration</span><span class="menu-copy">Connected systems, partner APIs, middleware, and sync logic.</span></a>
+                  <a class="mega-item" href="data-cloud.html"><span class="menu-title">Data &amp; Cloud</span><span class="menu-copy">AWS, Azure, data pipelines, reporting, and secure architecture.</span></a>
+                  <a class="mega-item" href="ai-automation.html"><span class="menu-title">AI Workflows &amp; Automation</span><span class="menu-copy">n8n, copilots, routing logic, and human-in-the-loop automation.</span></a>
+                  <a class="mega-item" href="seo-web-growth.html"><span class="menu-title">SEO &amp; Web Growth</span><span class="menu-copy">Technical SEO, landing pages, content systems, and conversion lift.</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            <li class="nav-item ml-lg-2">
+              <a class="nav-cta" href="tel:+12184133596">Book a Call</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="section page-hero">
+        <div class="container-xxl">
+          <div class="hero-grid">
+            <div data-aos="fade-up">
+              <h1 class="hero-title">Let’s talk about your <span class="accent-text">software, automation, or digital transformation project.</span></h1>
+              <p class="hero-copy">
+                Whether you need a CRM platform, API integration, mobile app, e-commerce build, AI workflow, or cloud modernization plan, we can help shape the right path and turn it into practical execution.
+              </p>
+              <div class="hero-actions">
+                <a class="button-primary" href="#project-brief">Book a Discovery Call</a>
+                <a class="button-secondary" href="mailto:info@gocashly.io">Email Us Directly</a>
+              </div>
+            </div>
+
+            <div data-aos="fade-left" data-aos-delay="120">
+              <div class="hero-visual">
+                <div class="hero-orb one"></div>
+                <div class="hero-orb two"></div>
+                <img src="images/cashly_new.png" alt="Cashly CRM interface showcase">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container-xxl">
+          <div class="section-intro" data-aos="fade-up">
+            <div>
+              <div class="section-kicker">Contact Details</div>
+              <h2>Reach the team directly or send us a project brief.</h2>
+            </div>
+          </div>
+
+          <div class="details-grid">
+            <article class="contact-card" data-aos="fade-up">
+              <div class="icon"><span class="ti-headphone-alt"></span></div>
+              <h3>Call</h3>
+              <p><a href="tel:+12184133596">+1 218-413-3596</a></p>
+              <p>Best for quick project conversations and discovery calls.</p>
+            </article>
+            <article class="contact-card" data-aos="fade-up" data-aos-delay="70">
+              <div class="icon"><span class="ti-email"></span></div>
+              <h3>Email</h3>
+              <p><a href="mailto:info@gocashly.io">info@gocashly.io</a></p>
+              <p>Share requirements, timelines, goals, or an initial project overview.</p>
+            </article>
+            <article class="contact-card" data-aos="fade-up" data-aos-delay="140">
+              <div class="icon"><span class="ti-map-alt"></span></div>
+              <h3>Visit</h3>
+              <p>2896 South Sheridan Way<br>Oakville, ON L6J 7T4</p>
+              <p>Serving clients with consulting-led software delivery and product execution.</p>
+            </article>
+            <article class="contact-card" data-aos="fade-up" data-aos-delay="210">
+              <div class="icon"><span class="ti-linkedin"></span></div>
+              <h3>Connect</h3>
+              <p><a href="https://www.linkedin.com/company/gocashly/" target="_blank" rel="noreferrer">LinkedIn</a></p>
+              <p>Stay connected with company updates and growth across the Cashly ecosystem.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container-xxl">
+          <div class="contact-grid">
+            <div class="form-panel" id="project-brief" data-aos="fade-right">
+              <div class="section-kicker">Project Brief</div>
+              <h2 style="font-size: clamp(30px, 4vw, 52px);">Send us your idea.</h2>
+              <p>Submit the form and your email app will open with a pre-filled message to our team.</p>
+
+              <form id="contactForm">
+                <div class="form-grid">
+                  <div>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your name" required>
+                  </div>
+                  <div>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                  </div>
+                </div>
+                <div>
+                  <label for="service">Service</label>
+                  <select id="service" name="service" required>
+                    <option value="">Choose a service</option>
+                    <option value="Custom Software &amp; Web Development">Custom Software &amp; Web Development</option>
+                    <option value="Mobile Development">Mobile Development</option>
+                    <option value="Native App Development">Native App Development</option>
+                    <option value="Hybrid App Development">Hybrid App Development</option>
+                    <option value="eCommerce Development">eCommerce Development</option>
+                    <option value="CRM Development">CRM Development</option>
+                    <option value="API Integration">API Integration</option>
+                    <option value="Data &amp; Cloud">Data &amp; Cloud</option>
+                    <option value="AI Workflows &amp; Automation">AI Workflows &amp; Automation</option>
+                    <option value="SEO &amp; Web Growth">SEO &amp; Web Growth</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="subject">Subject</label>
+                  <input id="subject" name="subject" type="text" placeholder="What do you need help with?" required>
+                </div>
+                <div>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Tell us about the product, workflow, integration, or business challenge." required></textarea>
+                </div>
+                <div class="hero-actions" style="margin-top: 4px;">
+                  <button class="button-primary" type="submit">Prepare Email</button>
+                  <a class="button-secondary" href="tel:+12184133596">Call Instead</a>
+                </div>
+              </form>
+
+              <p id="formStatus" class="form-note"></p>
+            </div>
+
+            <div class="map-panel" data-aos="fade-left">
+              <div class="section-kicker">Location</div>
+              <h2 style="font-size: clamp(28px, 3.8vw, 44px);">Oakville, Ontario</h2>
+              <p>We support clients with modern software delivery, product consulting, and digital transformation initiatives from our Oakville base.</p>
+              <div class="glass-panel" style="margin-top: 22px;">
+                <p style="margin-bottom: 10px;"><strong>Address</strong></p>
+                <p>2896 South Sheridan Way<br>Oakville, ON L6J 7T4</p>
+                <div class="hero-actions" style="margin-top: 20px;">
+                  <a class="button-secondary" href="tel:+12184133596">Call the Office</a>
+                  <a class="button-primary" href="mailto:info@gocashly.io">Email the Team</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container-xxl">
+          <div class="cta-grid">
+            <div class="cta-panel primary" data-aos="fade-up">
+              <div class="section-kicker">Best Fit</div>
+              <h2>We’re especially helpful when the problem spans product, operations, and engineering at the same time.</h2>
+              <p>That includes CRM projects, automation systems, internal dashboards, e-commerce workflows, mobile apps, cloud migrations, and API-heavy software delivery.</p>
+              <div class="hero-actions" style="margin-top: 24px;">
+                <a class="button-primary" href="about.html">Learn More About Us</a>
+                <a class="button-secondary" href="team.html">Meet the Team</a>
+              </div>
+            </div>
+
+            <div class="cta-panel" data-aos="fade-up" data-aos-delay="90">
+              <div class="section-kicker">What To Share</div>
+              <ul class="check-list" style="margin-top: 6px;">
+                <li>Current workflow or system pain points</li>
+                <li>Desired timeline, budget range, or delivery phase</li>
+                <li>Needed integrations, cloud setup, or automation logic</li>
+                <li>Any existing product, CRM, or internal platform context</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-block">
+      <div class="container-xxl">
+        <div class="footer-wrap">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a class="brand-lockup" href="index.html">
+                <img src="images/cts_logo.png" alt="Cashly Tech Services logo">
+              </a>
+              <p class="footer-copy">
+                Cashly Tech Services builds modern business software, mobile apps, AI workflows, data systems, and cloud-ready platforms with a sharp focus on execution, usability, and growth.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="footer-title">Contact</h3>
+              <div class="footer-list">
+                <p class="footer-item">
+                  <strong>Email</strong>
+                  <a href="mailto:info@gocashly.io">info@gocashly.io</a>
+                </p>
+                <p class="footer-item">
+                  <strong>Phone</strong>
+                  <a href="tel:+12184133596">+1 218-413-3596</a>
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="footer-title">Office</h3>
+              <div class="footer-list">
+                <p class="footer-item">
+                  <strong>Address</strong>
+                  2896 South Sheridan Way<br>
+                  Oakville, ON L6J 7T4
+                </p>
+                <p class="footer-item">
+                  <strong>Product</strong>
+                  <a href="https://cashlycrm.com" target="_blank" rel="noreferrer">cashlycrm.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>&copy; 2026 Cashly Tech Services. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 850,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 60
+    });
+
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      var name = document.getElementById("name").value.trim();
+      var email = document.getElementById("email").value.trim();
+      var service = document.getElementById("service").value.trim();
+      var subject = document.getElementById("subject").value.trim();
+      var message = document.getElementById("message").value.trim();
+      var status = document.getElementById("formStatus");
+
+      if (!name || !email || !service || !subject || !message) {
+        status.textContent = "Please complete all fields before sending.";
+        status.style.color = "#b42318";
+        return;
+      }
+
+      var body = [
+        "Name: " + name,
+        "Email: " + email,
+        "Service: " + service,
+        "",
+        message
+      ].join("\n");
+
+      var mailto = "mailto:info@gocashly.io?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      status.textContent = "Opening your email app with a pre-filled message.";
+      status.style.color = "#0e3ca8";
+      window.location.href = mailto;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cashly Tech Services | Software, AI Workflows, Cloud &amp; Mobile Development</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="Cashly Tech Services builds custom software, e-commerce platforms, CRM systems, API integrations, data workflows, mobile apps, and cloud solutions powered by React, Flutter, Java, Python, Go, AWS, Azure, MongoDB, AI workflows, and n8n automation.">
+  <meta name="author" content="Cashly Tech Services">
+
+  <meta property="og:title" content="Cashly Tech Services">
+  <meta property="og:description" content="Modern software delivery for e-commerce, CRM, mobile apps, API integrations, AI workflows, and cloud systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/cashly_new.png">
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/cashly-logo-nav.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f3f6f9;
+      --bg-soft: #eef2f7;
+      --surface: rgba(255, 255, 255, 0.9);
+      --surface-solid: #ffffff;
+      --text: #050412;
+      --muted: #3f3f3f;
+      --line: rgba(10, 18, 67, 0.12);
+      --primary: #1148c8;
+      --primary-deep: #0b3190;
+      --secondary: #56c4ff;
+      --accent: #9ec6ec;
+      --shadow: 0 24px 60px rgba(10, 18, 67, 0.08);
+      --radius-xl: 32px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --container: 1240px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Space Grotesk", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(53, 133, 208, 0.1), transparent 28%),
+        radial-gradient(circle at top right, rgba(10, 18, 67, 0.08), transparent 25%),
+        linear-gradient(180deg, #f7f9fc 0%, #f1f5f8 42%, #f7f9fc 100%);
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Space Grotesk", sans-serif;
+      color: var(--text);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    a,
+    a:hover,
+    a:focus {
+      text-decoration: none;
+    }
+
+    .site-shell {
+      position: relative;
+    }
+
+    .site-shell::before,
+    .site-shell::after {
+      content: "";
+      position: fixed;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: 0;
+      opacity: 0.55;
+      pointer-events: none;
+    }
+
+    .site-shell::before {
+      top: -120px;
+      right: -80px;
+      background: rgba(53, 133, 208, 0.1);
+    }
+
+    .site-shell::after {
+      bottom: 8%;
+      left: -120px;
+      background: rgba(10, 18, 67, 0.08);
+    }
+
+    .section {
+      padding: 96px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .container-xxl {
+      width: min(var(--container), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .main-nav {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(10, 18, 67, 0.08);
+      padding: 18px 0;
+    }
+
+    .main-nav .container-xxl {
+      display: flex;
+      align-items: center;
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      margin-right: 28px;
+    }
+
+    .brand-lockup img {
+      height: 112px;
+      width: auto;
+      display: block;
+    }
+
+    .navbar-collapse {
+      align-items: center;
+    }
+
+    .navbar-nav {
+      align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+      color: var(--text);
+      font-weight: 700;
+      font-size: 17px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 12px 16px !important;
+      border-radius: 999px;
+      transition: 0.25s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus,
+    .navbar-nav .nav-link.active,
+    .navbar-nav .show > .nav-link {
+      color: var(--primary);
+      background: rgba(53, 133, 208, 0.08);
+    }
+
+    .service-dropdown .dropdown-toggle::after {
+      margin-left: 8px;
+    }
+
+    .dropdown-menu.mega-menu {
+      min-width: 720px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      border-radius: 26px;
+      background: rgba(255, 255, 255, 0.96);
+      box-shadow: 0 28px 70px rgba(10, 18, 67, 0.14);
+      backdrop-filter: blur(18px);
+    }
+
+    .mega-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .mega-item {
+      display: block;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #f9fbff 0%, #f3f7ff 100%);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .mega-item:hover,
+    .mega-item:focus {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 36px rgba(10, 18, 67, 0.08);
+    }
+
+    .mega-item .menu-title {
+      display: block;
+      color: var(--text);
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    .mega-item .menu-copy {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    @media (min-width: 992px) {
+      .navbar-expand-lg .navbar-collapse {
+        flex: 1 1 auto;
+        display: flex !important;
+        justify-content: center;
+      }
+
+      .navbar-expand-lg .navbar-nav {
+        margin: 0 auto;
+        gap: 2px;
+      }
+
+      .navbar-expand-lg .navbar-nav .nav-item {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-expand-lg .navbar-nav .nav-item.ml-lg-2 {
+        margin-left: 18px !important;
+      }
+
+      .service-dropdown:hover > .dropdown-menu.mega-menu {
+        display: block;
+      }
+
+      .dropdown-menu.mega-menu {
+        margin-top: 12px;
+      }
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 56px;
+      padding: 0 26px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-deep));
+      color: #fff;
+      font-weight: 800;
+      font-size: 16px;
+      box-shadow: 0 16px 32px rgba(10, 18, 67, 0.22);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .nav-cta:hover,
+    .nav-cta:focus,
+    .button-primary:hover,
+    .button-primary:focus {
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 20px 42px rgba(10, 18, 67, 0.28);
+    }
+
+    .hero-section {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      padding-top: 156px;
+      padding-bottom: 88px;
+      background: linear-gradient(135deg, #050412 0%, #0a1243 100%);
+    }
+
+    .hero-section .container-xxl {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-video-wrap {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .hero-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      opacity: 0.78;
+    }
+
+    .hero-video-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(5, 4, 18, 0.96) 0%, rgba(10, 18, 67, 0.9) 34%, rgba(10, 18, 67, 0.78) 56%, rgba(10, 18, 67, 0.48) 100%),
+        radial-gradient(circle at 78% 50%, rgba(53, 133, 208, 0.18), transparent 24%),
+        linear-gradient(180deg, rgba(5, 4, 18, 0.16), rgba(5, 4, 18, 0.28));
+    }
+
+    .hero-network {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.58;
+    }
+
+    .hero-network-canvas {
+      position: absolute;
+      inset: 0;
+      filter: blur(7px);
+    }
+
+    .hero-grid {
+      position: relative;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 680px;
+    }
+
+    .hero-content {
+      text-align: left;
+      margin: 0;
+      max-width: 760px;
+      padding: 22px 26px;
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(5, 4, 18, 0.28), rgba(5, 4, 18, 0.12));
+      box-shadow: 0 18px 48px rgba(5, 4, 18, 0.12);
+      backdrop-filter: blur(6px);
+    }
+
+    .hero-title {
+      font-size: clamp(30px, 3.6vw, 48px);
+      line-height: 1.08;
+      margin: 24px 0;
+      max-width: 760px;
+      white-space: normal;
+      color: #ffffff;
+      text-shadow: 0 8px 24px rgba(5, 4, 18, 0.34);
+    }
+
+    .hero-title .accent-text {
+      background: linear-gradient(135deg, #ffffff, #9ec6ec, #ffffff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-copy {
+      font-size: 18px;
+      max-width: 760px;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 28px;
+      color: rgba(255, 255, 255, 0.86);
+      text-shadow: 0 6px 18px rgba(5, 4, 18, 0.3);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .button-primary,
+    .button-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 56px;
+      padding: 0 28px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: 0.25s ease;
+    }
+
+    .button-primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary-deep));
+      color: #fff;
+      box-shadow: 0 18px 36px rgba(17, 72, 200, 0.28);
+    }
+
+    .button-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .button-secondary:hover,
+    .button-secondary:focus {
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.36);
+      background: rgba(255, 255, 255, 0.14);
+      transform: translateY(-2px);
+    }
+
+    .section-intro {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: end;
+      margin-bottom: 38px;
+    }
+
+    .section-kicker {
+      color: var(--primary);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .section-intro h2 {
+      font-size: clamp(30px, 4.2vw, 54px);
+      margin-bottom: 0;
+      max-width: 720px;
+    }
+
+    .section-intro p {
+      max-width: 460px;
+      margin-bottom: 0;
+    }
+
+    .service-card,
+    .glass-panel,
+    .stack-column,
+    .process-card,
+    .industry-card,
+    .cta-panel {
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+    }
+
+    .services-grid,
+    .process-grid,
+    .industry-grid,
+    .stack-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .services-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .service-card {
+      display: block;
+      padding: 28px;
+      min-height: 100%;
+      color: inherit;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .service-card:hover,
+    .service-card:focus {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 56px rgba(15, 23, 42, 0.14);
+      color: inherit;
+    }
+
+    .service-card .service-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      font-size: 20px;
+      color: var(--primary);
+      background: linear-gradient(135deg, rgba(53, 133, 208, 0.1), rgba(158, 198, 236, 0.16));
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .glass-panel {
+      padding: 30px;
+    }
+
+    .showcase-panel {
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 42px;
+      perspective: 1800px;
+      background:
+        radial-gradient(circle at top, rgba(86, 196, 255, 0.22), rgba(86, 196, 255, 0) 42%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(239, 244, 252, 0.92));
+    }
+
+    .showcase-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(53, 133, 208, 0.08), rgba(10, 18, 67, 0.06));
+      pointer-events: none;
+    }
+
+    .showcase-panel::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 24px;
+      width: 72%;
+      height: 32px;
+      transform: translateX(-50%);
+      border-radius: 999px;
+      background: rgba(10, 18, 67, 0.18);
+      filter: blur(20px);
+      z-index: 0;
+    }
+
+    .showcase-panel img {
+      position: relative;
+      width: min(100%, 980px);
+      margin: 0 auto;
+      display: block;
+      border-radius: 30px;
+      transform: rotateX(7deg) rotateY(-8deg) translateZ(22px);
+      transform-style: preserve-3d;
+      box-shadow:
+        0 30px 70px rgba(10, 18, 67, 0.22),
+        0 12px 30px rgba(17, 72, 200, 0.14);
+      z-index: 1;
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 22px 0 0;
+      padding: 0;
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 34px;
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .check-list li::before {
+      content: "\e64c";
+      font-family: themify;
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--secondary);
+      font-size: 16px;
+    }
+
+    .split-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .stack-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 14px;
+    }
+
+    .stack-column {
+      padding: 28px;
+      min-height: 100%;
+    }
+
+    .stack-column h3 {
+      font-size: 22px;
+      margin-bottom: 18px;
+    }
+
+    .stack-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .stack-list span {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 0 14px;
+      border-radius: 999px;
+      background: rgba(53, 133, 208, 0.08);
+      color: var(--primary-deep);
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .capability-panel {
+      padding: 32px;
+      border-radius: var(--radius-xl);
+      background:
+        linear-gradient(135deg, rgba(10, 18, 67, 0.97), rgba(53, 133, 208, 0.92)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+      color: #fff;
+      box-shadow: 0 32px 70px rgba(10, 18, 67, 0.28);
+    }
+
+    .capability-panel h2,
+    .capability-panel p,
+    .capability-panel h4 {
+      color: #fff;
+    }
+
+    .capability-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .capability-item {
+      padding: 22px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .capability-item h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .process-grid {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .process-card {
+      padding: 28px;
+      min-height: 100%;
+    }
+
+    .process-step {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .industry-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .industry-card {
+      padding: 28px;
+      min-height: 100%;
+    }
+
+    .industry-card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .cta-strip {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .cta-panel {
+      padding: 36px;
+    }
+
+    .cta-panel h2,
+    .cta-panel h3 {
+      margin-bottom: 12px;
+    }
+
+    .cta-panel.primary {
+      background:
+        radial-gradient(circle at top right, rgba(53, 133, 208, 0.16), transparent 30%),
+        linear-gradient(135deg, #ffffff 0%, #f4f8ff 100%);
+    }
+
+    .footer-block {
+      margin-top: 32px;
+      padding: 0 0 34px;
+      background: #ffffff;
+      border-top: 1px solid rgba(15, 23, 42, 0.08);
+      box-shadow: 0 -14px 40px rgba(15, 23, 42, 0.04);
+    }
+
+    .footer-wrap {
+      padding-top: 42px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr 0.85fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .footer-brand {
+      max-width: 460px;
+    }
+
+    .footer-brand .brand-lockup {
+      display: inline-flex;
+      margin-bottom: 18px;
+    }
+
+    .footer-copy {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    .footer-title {
+      margin: 0 0 14px;
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .footer-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .footer-item {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    .footer-item a {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .footer-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--text);
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      align-items: center;
+      margin-top: 30px;
+      padding: 18px 24px;
+      border-radius: 18px;
+      background: var(--primary-deep);
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      margin: 0;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    @media (max-width: 1199px) {
+      .services-grid,
+      .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .industry-grid,
+      .stack-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .split-grid,
+      .cta-strip {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .brand-lockup img {
+        height: 92px;
+      }
+
+      .brand-lockup {
+        margin-right: 0;
+      }
+
+      .navbar-collapse {
+        background: rgba(255, 255, 255, 0.94);
+        border-radius: 22px;
+        padding: 16px;
+        margin-top: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .dropdown-menu.mega-menu {
+        min-width: 100%;
+        box-shadow: none;
+        border-radius: 18px;
+      }
+
+      .mega-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-cta {
+        margin-top: 12px;
+        width: 100%;
+      }
+
+      .hero-section {
+        padding-top: 132px;
+      }
+
+      .hero-grid {
+        min-height: auto;
+      }
+
+      .section-intro {
+        display: block;
+      }
+
+      .section-intro p {
+        margin-top: 14px;
+      }
+
+      .capability-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .showcase-panel {
+        padding: 28px;
+      }
+
+      .showcase-panel img {
+        border-radius: 24px;
+        transform: rotateX(4deg) rotateY(-5deg) translateZ(12px);
+      }
+    }
+
+    @media (max-width: 767px) {
+      .section {
+        padding: 78px 0;
+      }
+
+      .brand-lockup img {
+        height: 82px;
+      }
+
+      .hero-title {
+        font-size: 42px;
+      }
+
+      .hero-copy {
+        font-size: 17px;
+      }
+
+      .services-grid,
+      .process-grid,
+      .industry-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .showcase-panel {
+        padding: 20px;
+      }
+
+      .showcase-panel img {
+        border-radius: 20px;
+        transform: none;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        display: block;
+      }
+
+      .footer-bottom p + p {
+        margin-top: 10px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="css/shared-navbar.css">
+</head>
+
+<body>
+  <div class="site-shell">
+    <nav class="navbar navbar-expand-lg main-nav fixed-top">
+      <div class="container-xxl">
+        <a class="navbar-brand brand-lockup" href="#top" aria-label="Cashly Tech Services home">
+          <img src="images/cts_logo.png" alt="Cashly Tech Services logo">
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="ti-menu" style="font-size: 24px; color: #0f172a;"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavigation">
+          <ul class="navbar-nav ml-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item dropdown service-dropdown">
+              <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+              <div class="dropdown-menu mega-menu" aria-labelledby="servicesDropdown">
+                <div class="mega-grid">
+                  <a class="mega-item" href="custom-software.html"><span class="menu-title">Custom Software &amp; Web</span><span class="menu-copy">Product platforms, dashboards, portals, and internal systems.</span></a>
+                  <a class="mega-item" href="mobile-development.html"><span class="menu-title">Mobile Development</span><span class="menu-copy">iOS, Android, native teams, and hybrid app delivery.</span></a>
+                  <a class="mega-item" href="native-app-development.html"><span class="menu-title">Native App Development</span><span class="menu-copy">SwiftUI, Jetpack Compose, deeper platform control, and device features.</span></a>
+                  <a class="mega-item" href="hybrid-app-development.html"><span class="menu-title">Hybrid App Development</span><span class="menu-copy">Flutter and React Native builds for faster multi-platform launches.</span></a>
+                  <a class="mega-item" href="ecommerce-development.html"><span class="menu-title">eCommerce Development</span><span class="menu-copy">Storefronts, checkout flows, subscriptions, and operations.</span></a>
+                  <a class="mega-item" href="crm-development.html"><span class="menu-title">CRM Development</span><span class="menu-copy">Sales workflows, servicing visibility, and team automation.</span></a>
+                  <a class="mega-item" href="api-integration.html"><span class="menu-title">API Integration</span><span class="menu-copy">Connected systems, partner APIs, middleware, and sync logic.</span></a>
+                  <a class="mega-item" href="data-cloud.html"><span class="menu-title">Data &amp; Cloud</span><span class="menu-copy">AWS, Azure, data pipelines, reporting, and secure architecture.</span></a>
+                  <a class="mega-item" href="ai-automation.html"><span class="menu-title">AI Workflows &amp; Automation</span><span class="menu-copy">n8n, copilots, routing logic, and human-in-the-loop automation.</span></a>
+                  <a class="mega-item" href="seo-web-growth.html"><span class="menu-title">SEO &amp; Web Growth</span><span class="menu-copy">Technical SEO, landing pages, content systems, and conversion lift.</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ml-lg-2">
+              <a class="nav-cta" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2PwLnMIboXJYLmTsCPplmIsfxdOpZLqBosbVhaP4f5xH1Wp7McyVyYGjV9aMC20yGazrkx0koT" target="_blank" rel="noreferrer">Book a Call</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="section hero-section">
+        <div class="hero-video-wrap" aria-hidden="true">
+          <video class="hero-video" autoplay muted loop playsinline poster="images/ficode-hero-bg.webp">
+            <source src="images/ficode-banner.mp4" type="video/mp4">
+          </video>
+          <div class="hero-video-overlay"></div>
+        </div>
+        <div class="hero-network" aria-hidden="true">
+          <div id="home-hero-graph" class="hero-network-canvas"></div>
+        </div>
+        <div class="container-xxl">
+          <div class="row hero-grid">
+            <div class="col-lg-7" data-aos="fade-up">
+              <div class="hero-content">
+                <h1 class="hero-title">Transforming business operations with <span class="accent-text">data, cloud, automation, and modern software.</span></h1>
+                <p class="hero-copy">
+                  Cashly Tech Services helps organizations modernize operations through custom software, digital transformation, API integration, data management, cloud delivery, AI workflows, and mobile apps.
+                </p>
+                <div class="hero-actions">
+                  <a class="button-primary" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2PwLnMIboXJYLmTsCPplmIsfxdOpZLqBosbVhaP4f5xH1Wp7McyVyYGjV9aMC20yGazrkx0koT" target="_blank" rel="noreferrer">
+                    Start Your Project
+                    <span class="ti-arrow-top-right"></span>
+                  </a>
+                <a class="button-secondary" href="https://cashlycrm.com" target="_blank" rel="noreferrer">
+                  Explore Cashly CRM
+                  <span class="ti-arrow-right"></span>
+                </a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container-xxl">
+          <div class="section-intro" data-aos="fade-up">
+            <div>
+              <div class="section-kicker">Services</div>
+              <h2>Technology consulting and software delivery built around measurable digital growth.</h2>
+            </div>
+            <p>Using the same broad service logic as top consulting-led development firms, we help clients connect systems, modernize operations, and launch scalable digital products with less complexity.</p>
+          </div>
+
+          <div class="services-grid">
+            <a class="service-card" href="custom-software.html" data-aos="fade-up">
+              <div class="service-badge"><span class="ti-harddrives"></span></div>
+              <h3>Custom Software &amp; Web</h3>
+              <p>Web platforms, portals, dashboards, and internal software designed around your operating model.</p>
+            </a>
+            <a class="service-card" href="mobile-development.html" data-aos="fade-up" data-aos-delay="50">
+              <div class="service-badge"><span class="ti-mobile"></span></div>
+              <h3>Mobile Development</h3>
+              <p>Native and hybrid mobile products for Android and iOS with launch-ready UX and clean architecture.</p>
+            </a>
+            <a class="service-card" href="native-app-development.html" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-badge"><span class="ti-apple"></span></div>
+              <h3>Native App Development</h3>
+              <p>Swift and Kotlin delivery for performance-heavy apps, hardware integrations, and platform-first experiences.</p>
+            </a>
+            <a class="service-card" href="hybrid-app-development.html" data-aos="fade-up" data-aos-delay="150">
+              <div class="service-badge"><span class="ti-layout"></span></div>
+              <h3>Hybrid App Development</h3>
+              <p>Flutter and React Native builds for faster launches, shared codebases, and leaner multi-platform teams.</p>
+            </a>
+            <a class="service-card" href="api-integration.html" data-aos="fade-up">
+              <div class="service-badge"><span class="ti-link"></span></div>
+              <h3>API Integration</h3>
+              <p>Connect internal tools, third-party platforms, and customer systems with dependable integrations and real-time data exchange.</p>
+            </a>
+            <a class="service-card" href="crm-development.html" data-aos="fade-up" data-aos-delay="50">
+              <div class="service-badge"><span class="ti-desktop"></span></div>
+              <h3>CRM Development</h3>
+              <p>Sales, support, and service operations software with better visibility, automation, and follow-up discipline.</p>
+            </a>
+            <a class="service-card" href="ecommerce-development.html" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-badge"><span class="ti-shopping-cart-full"></span></div>
+              <h3>eCommerce Development</h3>
+              <p>Build conversion-focused storefronts, product workflows, subscriptions, backend operations, and SEO-ready digital commerce.</p>
+            </a>
+            <a class="service-card" href="data-cloud.html" data-aos="fade-up" data-aos-delay="150">
+              <div class="service-badge"><span class="ti-cloud"></span></div>
+              <h3>Data &amp; Cloud</h3>
+              <p>Leverage AWS, Azure, analytics pipelines, and secure data foundations for future-ready application growth.</p>
+            </a>
+            <a class="service-card" href="ai-automation.html" data-aos="fade-up">
+              <div class="service-badge"><span class="ti-crown"></span></div>
+              <h3>AI Workflows &amp; Automation</h3>
+              <p>Deploy AI-assisted workflows, n8n automation, smart routing, and operational copilots that align with real business goals.</p>
+            </a>
+            <a class="service-card" href="seo-web-growth.html" data-aos="fade-up" data-aos-delay="50">
+              <div class="service-badge"><span class="ti-bar-chart"></span></div>
+              <h3>SEO &amp; Web Growth</h3>
+              <p>Technical SEO, landing pages, content systems, and performance improvements that support pipeline growth.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="product">
+        <div class="container-xxl">
+          <div class="split-grid">
+            <div class="glass-panel showcase-panel" data-aos="fade-right">
+              <img src="images/product.png" alt="Cashly CRM interface showcase">
+            </div>
+
+            <div class="glass-panel" data-aos="fade-left">
+              <div class="section-kicker">Flagship Product</div>
+              <h2 style="font-size: clamp(30px, 4vw, 52px);">Cashly CRM shows how we turn domain knowledge into a scalable software product.</h2>
+              <p>
+                Our in-house product, Cashly CRM, reflects the same approach we bring to client work: tailored software, intelligent workflows, reliable integrations, and UX that supports real business activity instead of slowing it down.
+              </p>
+              <ul class="check-list">
+                <li>Built from operational needs inside a high-touch sales and service workflow</li>
+                <li>Combines CRM visibility, automation, and product-led decision making</li>
+                <li>Supports teams that need speed, clarity, follow-up discipline, and data structure</li>
+                <li>Demonstrates our ability to move from idea to launchable business software</li>
+              </ul>
+              <div class="hero-actions" style="margin-top: 28px; margin-bottom: 0;">
+                <a class="button-primary" href="https://cashlycrm.com" target="_blank" rel="noreferrer">Visit Cashly CRM</a>
+                <a class="button-secondary" href="#contact">Talk About a Custom Build</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="expertise">
+        <div class="container-xxl">
+          <div class="capability-panel" data-aos="fade-up">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="section-kicker" style="color: rgba(255,255,255,0.72);">Expertise</div>
+                <h2>Modern technology capabilities shaped around consulting, delivery, and long-term scalability.</h2>
+                <p>Our expertise spans cloud-native architecture, AI-assisted workflows, mobile applications, APIs, custom software, and maintainable business platforms that evolve with client needs.</p>
+              </div>
+              <div class="col-lg-6">
+                <div class="capability-grid">
+                  <div class="capability-item">
+                    <h4>AI Workflows &amp; Automation</h4>
+                    <p>Workflow automation, smart handoffs, internal copilots, and business logic designed for repeatable execution.</p>
+                  </div>
+                  <div class="capability-item">
+                    <h4>AWS &amp; Azure Delivery</h4>
+                    <p>Cloud setup, deployment design, architecture planning, environment control, and scalable release pipelines.</p>
+                  </div>
+                  <div class="capability-item">
+                    <h4>Backend Engineering</h4>
+                    <p>Java, Python, and Go services built for software products, APIs, data logic, and long-term maintainability.</p>
+                  </div>
+                  <div class="capability-item">
+                    <h4>Frontend &amp; Mobile</h4>
+                    <p>React, React Native, Flutter, Android, and iOS solutions focused on performance, usability, and product fit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-intro" style="margin-top: 48px;" data-aos="fade-up">
+            <div>
+              <div class="section-kicker">Technology Stack</div>
+              <h2>Technology expertise across front-end, back-end, cross-platform, and cloud delivery.</h2>
+            </div>
+            <p>We choose tools that support maintainability, user experience, performance, and sustainable business growth rather than short-lived hype.</p>
+          </div>
+
+          <div class="stack-grid">
+            <div class="stack-column" data-aos="fade-up">
+              <h3>Frontend, Web &amp; Mobile</h3>
+              <div class="stack-list">
+                <span>React</span>
+                <span>React Native</span>
+                <span>Flutter</span>
+                <span>Android</span>
+                <span>iOS</span>
+                <span>SEO Foundations</span>
+                <span>Responsive UI</span>
+              </div>
+            </div>
+            <div class="stack-column" data-aos="fade-up" data-aos-delay="70">
+              <h3>Backend, Data &amp; APIs</h3>
+              <div class="stack-list">
+                <span>Java</span>
+                <span>Python</span>
+                <span>Go</span>
+                <span>MongoDB</span>
+                <span>API Design</span>
+                <span>Business Logic</span>
+                <span>Data Workflows</span>
+              </div>
+            </div>
+            <div class="stack-column" data-aos="fade-up" data-aos-delay="140">
+              <h3>Cloud, AI &amp; Delivery</h3>
+              <div class="stack-list">
+                <span>AWS</span>
+                <span>Azure</span>
+                <span>n8n</span>
+                <span>AI Workflows</span>
+                <span>CI/CD</span>
+                <span>Integrations</span>
+                <span>Scalable Hosting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="process">
+        <div class="container-xxl">
+          <div class="section-intro" data-aos="fade-up">
+            <div>
+              <div class="section-kicker">Process</div>
+              <h2>A practical delivery process from discovery to post-launch optimization.</h2>
+            </div>
+            <p>Our process stays collaborative and visible, giving you a clear path from idea to production and continued improvement after release.</p>
+          </div>
+
+          <div class="process-grid">
+            <article class="process-card" data-aos="fade-up">
+              <div class="process-step">01</div>
+              <h3>Discover &amp; Plan</h3>
+              <p>We learn your business goals, identify requirements, and define a clear roadmap before build work begins.</p>
+            </article>
+            <article class="process-card" data-aos="fade-up" data-aos-delay="70">
+              <div class="process-step">02</div>
+              <h3>Design &amp; Prototype</h3>
+              <p>We shape the product experience, solution flow, and early prototypes so the direction is clear before development scales.</p>
+            </article>
+            <article class="process-card" data-aos="fade-up" data-aos-delay="140">
+              <div class="process-step">03</div>
+              <h3>Develop &amp; Test</h3>
+              <p>Our team builds the platform, integrations, and workflows while testing continuously for quality, stability, and fit.</p>
+            </article>
+            <article class="process-card" data-aos="fade-up" data-aos-delay="210">
+              <div class="process-step">04</div>
+              <h3>Launch &amp; Train</h3>
+              <p>We deploy the solution, support onboarding, and help your team start using the system with confidence from day one.</p>
+            </article>
+            <article class="process-card" data-aos="fade-up" data-aos-delay="280">
+              <div class="process-step">05</div>
+              <h3>Support &amp; Optimize</h3>
+              <p>After launch, we continue improving performance, workflows, and features as your operation evolves.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container-xxl">
+          <div class="section-intro" data-aos="fade-up">
+            <div>
+              <div class="section-kicker">Who We Build For</div>
+              <h2>Industries we support with scalable, process-aware technology solutions.</h2>
+            </div>
+            <p>We work best with organizations that need tailored software, integrated systems, and dependable delivery across regulated, operational, and growth-focused markets.</p>
+          </div>
+
+          <div class="industry-grid">
+            <article class="industry-card" data-aos="fade-up">
+              <h3>FinTech</h3>
+              <p>CRM systems, borrower journeys, automation, integrations, and platform logic for finance-driven teams and products.</p>
+            </article>
+            <article class="industry-card" data-aos="fade-up" data-aos-delay="80">
+              <h3>Real Estate</h3>
+              <p>Digital workflows, lead handling, customer portals, and operational systems for high-touch property and lending environments.</p>
+            </article>
+            <article class="industry-card" data-aos="fade-up" data-aos-delay="160">
+              <h3>Healthcare</h3>
+              <p>Structured workflows, secure data handling, service portals, and support tools for teams operating in complex environments.</p>
+            </article>
+            <article class="industry-card" data-aos="fade-up">
+              <h3>eCommerce</h3>
+              <p>Online storefronts, subscriptions, platform integrations, performance improvements, and growth-ready commerce operations.</p>
+            </article>
+            <article class="industry-card" data-aos="fade-up" data-aos-delay="80">
+              <h3>EdTech &amp; Utility</h3>
+              <p>Business applications, reporting tools, and process modernization for organizations that need clarity, uptime, and scale.</p>
+            </article>
+            <article class="industry-card" data-aos="fade-up" data-aos-delay="160">
+              <h3>Startups &amp; Scaling Teams</h3>
+              <p>MVPs, mobile apps, internal platforms, cloud systems, and ongoing product iteration for ambitious companies building fast.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container-xxl">
+          <div class="cta-strip">
+            <div class="cta-panel primary" data-aos="fade-up">
+              <div class="section-kicker">Start Here</div>
+              <h2>Looking for a consulting-led software partner for your next transformation project?</h2>
+              <p>Let’s define the right roadmap for your software, cloud, data, automation, or mobile initiative and turn it into a practical delivery plan.</p>
+              <div class="hero-actions" style="margin-bottom: 0; margin-top: 24px;">
+                <a class="button-primary" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2PwLnMIboXJYLmTsCPplmIsfxdOpZLqBosbVhaP4f5xH1Wp7McyVyYGjV9aMC20yGazrkx0koT" target="_blank" rel="noreferrer">Book a Discovery Call</a>
+                <a class="button-secondary" href="https://cashlycrm.com" target="_blank" rel="noreferrer">View Product</a>
+              </div>
+            </div>
+
+            <div class="cta-panel" data-aos="fade-up" data-aos-delay="90">
+              <div class="section-kicker">What You Can Bring</div>
+              <h3>A clear problem statement is enough to begin.</h3>
+              <p>You do not need a finished specification. Bring the business challenge, integration gap, or product vision and we will shape the right scope together.</p>
+              <ul class="check-list">
+                <li>Digital transformation and modernization goals</li>
+                <li>CRM, portal, data, or dashboard requirements</li>
+                <li>API integration, AI workflow, or automation needs</li>
+                <li>Mobile, cloud, or eCommerce delivery plans</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-block">
+      <div class="container-xxl">
+        <div class="footer-wrap">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a class="brand-lockup" href="#top">
+                <img src="images/cts_logo.png" alt="Cashly Tech Services logo">
+              </a>
+              <p class="footer-copy">
+                Cashly Tech Services builds modern business software, mobile apps, AI workflows, data systems, and cloud-ready platforms with a sharp focus on execution, usability, and growth.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="footer-title">Contact</h3>
+              <div class="footer-list">
+                <p class="footer-item">
+                  <strong>Email</strong>
+                  <a href="mailto:info@gocashly.io">info@gocashly.io</a>
+                </p>
+                <p class="footer-item">
+                  <strong>Phone</strong>
+                  <a href="tel:+12184133596">+1 218-413-3596</a>
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="footer-title">Office</h3>
+              <div class="footer-list">
+                <p class="footer-item">
+                  <strong>Address</strong>
+                  2896 South Sheridan Way<br>
+                  Oakville, ON L6J 7T4
+                </p>
+                <p class="footer-item">
+                  <strong>Product</strong>
+                  <a href="https://cashlycrm.com" target="_blank" rel="noreferrer">cashlycrm.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>&copy; 2026 Cashly Tech Services. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="js/graph-route-animation.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+  <script>
+    if (window.CashlyGraphRouteAnimation) {
+      window.CashlyGraphRouteAnimation.init("home-hero-graph", {
+        columns: 6,
+        minNodesPerColumn: 3,
+        maxNodesPerColumn: 5,
+        nodeRadiusMin: 4.5,
+        nodeRadiusMax: 8.8,
+        routeDuration: 3900,
+        routePause: 900
+      });
+    }
+
+    AOS.init({
+      duration: 850,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 60
+    });
+  </script>
+</body>
+</html>

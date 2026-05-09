@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>About Cashly Tech Services</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="Learn about Cashly Tech Services, our software consulting approach, our product mindset, and how we help companies modernize with CRM systems, AI workflows, mobile apps, data systems, and cloud delivery.">
+  <meta name="author" content="Cashly Tech Services">
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/cashly-logo-nav.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f3f6f9;
+      --bg-soft: #eef2f7;
+      --surface: rgba(255, 255, 255, 0.9);
+      --surface-solid: #ffffff;
+      --text: #050412;
+      --muted: #3f3f3f;
+      --line: rgba(10, 18, 67, 0.12);
+      --primary: #1148c8;
+      --primary-deep: #0b3190;
+      --secondary: #56c4ff;
+      --accent: #9ec6ec;
+      --shadow: 0 24px 60px rgba(10, 18, 67, 0.08);
+      --radius-xl: 32px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --container: 1240px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Space Grotesk", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(53, 133, 208, 0.1), transparent 28%),
+        radial-gradient(circle at top right, rgba(10, 18, 67, 0.08), transparent 25%),
+        linear-gradient(180deg, #f7f9fc 0%, #f1f5f8 42%, #f7f9fc 100%);
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Space Grotesk", sans-serif;
+      color: var(--text);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    a,
+    a:hover,
+    a:focus {
+      text-decoration: none;
+    }
+
+    .site-shell {
+      position: relative;
+    }
+
+    .site-shell::before,
+    .site-shell::after {
+      content: "";
+      position: fixed;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.55;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .site-shell::before {
+      top: -120px;
+      right: -80px;
+      background: rgba(53, 133, 208, 0.1);
+    }
+
+    .site-shell::after {
+      left: -120px;
+      bottom: 8%;
+      background: rgba(10, 18, 67, 0.08);
+    }
+
+    .section {
+      position: relative;
+      z-index: 1;
+      padding: 96px 0;
+    }
+
+    .container-xxl {
+      width: min(var(--container), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .main-nav {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(10, 18, 67, 0.08);
+      padding: 18px 0;
+    }
+
+    .main-nav .container-xxl {
+      display: flex;
+      align-items: center;
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      margin-right: 28px;
+    }
+
+    .brand-lockup img {
+      display: block;
+      height: 112px;
+      width: auto;
+    }
+
+    .navbar-collapse {
+      align-items: center;
+    }
+
+    .navbar-nav {
+      align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+      color: var(--text);
+      font-weight: 700;
+      font-size: 17px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 12px 16px !important;
+      border-radius: 999px;
+      transition: 0.25s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus,
+    .navbar-nav .nav-link.active,
+    .navbar-nav .show > .nav-link {
+      color: var(--primary);
+      background: rgba(53, 133, 208, 0.08);
+    }
+
+    .service-dropdown .dropdown-toggle::after {
+      margin-left: 8px;
+    }
+
+    .dropdown-menu.mega-menu {
+      min-width: 720px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      border-radius: 26px;
+      background: rgba(255, 255, 255, 0.96);
+      box-shadow: 0 28px 70px rgba(10, 18, 67, 0.14);
+      backdrop-filter: blur(18px);
+    }
+
+    .mega-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .mega-item {
+      display: block;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #f9fbff 0%, #f3f7ff 100%);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .mega-item:hover,
+    .mega-item:focus {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+    }
+
+    .mega-item .menu-title {
+      display: block;
+      color: var(--text);
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    .mega-item .menu-copy {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    @media (min-width: 992px) {
+      .navbar-expand-lg .navbar-collapse {
+        flex: 1 1 auto;
+        display: flex !important;
+        justify-content: center;
+      }
+
+      .navbar-expand-lg .navbar-nav {
+        margin: 0 auto;
+        gap: 2px;
+      }
+
+      .navbar-expand-lg .navbar-nav .nav-item {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-expand-lg .navbar-nav .nav-item.ml-lg-2 {
+        margin-left: 18px !important;
+      }
+
+      .service-dropdown:hover > .dropdown-menu.mega-menu {
+        display: block;
+      }
+
+      .dropdown-menu.mega-menu {
+        margin-top: 12px;
+      }
+    }
+
+    .nav-cta,
+    .button-primary,
+    .button-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: 0.25s ease;
+    }
+
+    .nav-cta,
+    .button-primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary-deep));
+      color: #fff;
+      box-shadow: 0 16px 32px rgba(10, 18, 67, 0.22);
+    }
+
+    .nav-cta {
+      min-height: 56px;
+      padding: 0 26px;
+    }
+
+    .button-primary,
+    .button-secondary {
+      min-height: 56px;
+      padding: 0 28px;
+    }
+
+    .button-secondary {
+      background: rgba(255, 255, 255, 0.84);
+      color: var(--text);
+      border: 1px solid rgba(15, 23, 42, 0.08);
+    }
+
+    .button-primary:hover,
+    .button-secondary:hover,
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      color: inherit;
+    }
+
+    .button-primary:hover,
+    .nav-cta:hover {
+      color: #fff;
+    }
+
+    .page-hero {
+      padding-top: 154px;
+      padding-bottom: 86px;
+    }
+
+    .hero-grid,
+    .split-grid,
+    .cta-grid {
+      display: grid;
+      gap: 24px;
+    }
+
+    .hero-grid,
+    .split-grid {
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(53, 133, 208, 0.16);
+      color: var(--primary-deep);
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      box-shadow: 0 16px 32px rgba(10, 18, 67, 0.05);
+    }
+
+    .pulse {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      box-shadow: 0 0 0 10px rgba(86, 196, 255, 0.14);
+    }
+
+    .hero-title {
+      margin: 22px 0;
+      font-size: clamp(42px, 6vw, 70px);
+      line-height: 1.02;
+      max-width: 760px;
+    }
+
+    .accent-text {
+      background: linear-gradient(135deg, var(--primary-deep), var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-copy {
+      max-width: 650px;
+      font-size: 18px;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .glass-panel,
+    .story-card,
+    .value-card,
+    .timeline-card,
+    .cta-panel {
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+    }
+
+    .glass-panel,
+    .story-card,
+    .cta-panel {
+      padding: 30px;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 560px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-device {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 720px;
+      filter: drop-shadow(0 28px 58px rgba(10, 18, 67, 0.16));
+    }
+
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(16px);
+      opacity: 0.9;
+    }
+
+    .hero-orb.one {
+      width: 220px;
+      height: 220px;
+      top: 10%;
+      left: 6%;
+      background: rgba(86, 196, 255, 0.24);
+    }
+
+    .hero-orb.two {
+      width: 260px;
+      height: 260px;
+      right: 0;
+      bottom: 10%;
+      background: rgba(10, 18, 67, 0.12);
+    }
+
+    .floating-note {
+      position: absolute;
+      right: 4%;
+      bottom: 4%;
+      z-index: 3;
+      width: 220px;
+      padding: 18px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(16px);
+      box-shadow: var(--shadow);
+    }
+
+    .floating-note .ti {
+      display: inline-flex;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+      border-radius: 14px;
+      font-size: 18px;
+      color: var(--primary);
+      background: linear-gradient(135deg, rgba(17, 72, 200, 0.12), rgba(86, 196, 255, 0.18));
+    }
+
+    .section-intro {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: end;
+      margin-bottom: 38px;
+    }
+
+    .section-kicker {
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .section-intro h2 {
+      font-size: clamp(30px, 4vw, 52px);
+      margin-bottom: 0;
+      max-width: 760px;
+    }
+
+    .section-intro p {
+      max-width: 460px;
+      margin-bottom: 0;
+    }
+
+    .story-grid,
+    .value-grid,
+    .timeline-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .story-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 22px;
+    }
+
+    .story-card h3,
+    .value-card h3,
+    .timeline-card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .story-card .icon,
+    .value-card .icon {
+      display: inline-flex;
+      width: 52px;
+      height: 52px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      border-radius: 16px;
+      color: var(--primary);
+      font-size: 20px;
+      background: linear-gradient(135deg, rgba(17, 72, 200, 0.12), rgba(86, 196, 255, 0.18));
+    }
+
+    .value-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .value-card {
+      padding: 28px;
+      min-height: 100%;
+    }
+
+    .timeline-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .timeline-card {
+      padding: 28px;
+      min-height: 100%;
+    }
+
+    .timeline-step {
+      display: inline-flex;
+      width: 54px;
+      height: 54px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      border-radius: 16px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+    }
+
+    .cta-grid {
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: stretch;
+    }
+
+    .cta-panel.primary {
+      background:
+        radial-gradient(circle at top right, rgba(53, 133, 208, 0.16), transparent 30%),
+        linear-gradient(135deg, #ffffff 0%, #f4f8ff 100%);
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 22px 0 0;
+      padding: 0;
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 34px;
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .check-list li::before {
+      content: "\e64c";
+      font-family: themify;
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--secondary);
+      font-size: 16px;
+    }
+
+    .footer-block {
+      margin-top: 32px;
+      padding: 0 0 34px;
+      background: #ffffff;
+      border-top: 1px solid rgba(15, 23, 42, 0.08);
+      box-shadow: 0 -14px 40px rgba(15, 23, 42, 0.04);
+    }
+
+    .footer-wrap {
+      padding-top: 42px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr 0.85fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .footer-brand {
+      max-width: 460px;
+    }
+
+    .footer-brand .brand-lockup {
+      display: inline-flex;
+      margin-bottom: 18px;
+    }
+
+    .footer-copy {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    .footer-title {
+      margin: 0 0 14px;
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .footer-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .footer-item {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    .footer-item a {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .footer-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--text);
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      align-items: center;
+      margin-top: 30px;
+      padding: 18px 24px;
+      border-radius: 18px;
+      background: var(--primary-deep);
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      margin: 0;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    @media (max-width: 1199px) {
+      .story-grid,
+      .timeline-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid,
+      .split-grid,
+      .cta-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .brand-lockup img {
+        height: 92px;
+      }
+
+      .brand-lockup {
+        margin-right: 0;
+      }
+
+      .navbar-collapse {
+        background: rgba(255, 255, 255, 0.94);
+        border-radius: 22px;
+        padding: 16px;
+        margin-top: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .dropdown-menu.mega-menu {
+        min-width: 100%;
+        box-shadow: none;
+        border-radius: 18px;
+      }
+
+      .mega-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-cta {
+        width: 100%;
+        margin-top: 12px;
+      }
+
+      .section-intro {
+        display: block;
+      }
+
+      .section-intro p {
+        margin-top: 14px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .section {
+        padding: 78px 0;
+      }
+
+      .brand-lockup img {
+        height: 82px;
+      }
+
+      .page-hero {
+        padding-top: 132px;
+      }
+
+      .hero-title {
+        font-size: 42px;
+      }
+
+      .value-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        min-height: 420px;
+      }
+
+      .floating-note {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        width: 100%;
+        margin-top: 16px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        display: block;
+      }
+
+      .footer-bottom p + p {
+        margin-top: 10px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="css/shared-navbar.css">
+</head>
+
+<body>
+  <div class="site-shell">
+    <nav class="navbar navbar-expand-lg main-nav fixed-top">
+      <div class="container-xxl">
+        <a class="navbar-brand brand-lockup" href="index.html" aria-label="Cashly Tech Services home">
+          <img src="images/cts_logo.png" alt="Cashly Tech Services logo">
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="ti-menu" style="font-size: 24px; color: #0f172a;"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavigation">
+          <ul class="navbar-nav ml-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item dropdown service-dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html#services" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+              <div class="dropdown-menu mega-menu" aria-labelledby="servicesDropdown">
+                <div class="mega-grid">
+                  <a class="mega-item" href="custom-software.html"><span class="menu-title">Custom Software &amp; Web</span><span class="menu-copy">Product platforms, dashboards, portals, and internal systems.</span></a>
+                  <a class="mega-item" href="mobile-development.html"><span class="menu-title">Mobile Development</span><span class="menu-copy">iOS, Android, native teams, and hybrid app delivery.</span></a>
+                  <a class="mega-item" href="native-app-development.html"><span class="menu-title">Native App Development</span><span class="menu-copy">SwiftUI, Jetpack Compose, deeper platform control, and device features.</span></a>
+                  <a class="mega-item" href="hybrid-app-development.html"><span class="menu-title">Hybrid App Development</span><span class="menu-copy">Flutter and React Native builds for faster multi-platform launches.</span></a>
+                  <a class="mega-item" href="ecommerce-development.html"><span class="menu-title">eCommerce Development</span><span class="menu-copy">Storefronts, checkout flows, subscriptions, and operations.</span></a>
+                  <a class="mega-item" href="crm-development.html"><span class="menu-title">CRM Development</span><span class="menu-copy">Sales workflows, servicing visibility, and team automation.</span></a>
+                  <a class="mega-item" href="api-integration.html"><span class="menu-title">API Integration</span><span class="menu-copy">Connected systems, partner APIs, middleware, and sync logic.</span></a>
+                  <a class="mega-item" href="data-cloud.html"><span class="menu-title">Data &amp; Cloud</span><span class="menu-copy">AWS, Azure, data pipelines, reporting, and secure architecture.</span></a>
+                  <a class="mega-item" href="ai-automation.html"><span class="menu-title">AI Workflows &amp; Automation</span><span class="menu-copy">n8n, copilots, routing logic, and human-in-the-loop automation.</span></a>
+                  <a class="mega-item" href="seo-web-growth.html"><span class="menu-title">SEO &amp; Web Growth</span><span class="menu-copy">Technical SEO, landing pages, content systems, and conversion lift.</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ml-lg-2">
+              <a class="nav-cta" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2PwLnMIboXJYLmTsCPplmIsfxdOpZLqBosbVhaP4f5xH1Wp7McyVyYGjV9aMC20yGazrkx0koT" target="_blank" rel="noreferrer">Book a Call</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="section page-hero">
+        <div class="container-xxl">
+          <div class="hero-grid">
+            <div data-aos="fade-up">
+              <div class="eyebrow">
+                <span class="pulse"></span>
+                About Cashly Tech Services
+              </div>
+              <h1 class="hero-title">A software company shaped by <span class="accent-text">operations, product thinking, and real workflow problems.</span></h1>
+              <p class="hero-copy">
+                Cashly Tech Services combines consulting discipline with hands-on product delivery. We help businesses modernize through custom software, CRM systems, AI workflows, integrations, data management, cloud infrastructure, and mobile applications that solve meaningful operational problems.
+              </p>
+              <div class="hero-actions">
+                <a class="button-primary" href="contact.html">Start a Conversation</a>
+                <a class="button-secondary" href="https://cashlycrm.com" target="_blank" rel="noreferrer">See Cashly CRM</a>
+              </div>
+            </div>
+
+            <div data-aos="fade-left" data-aos-delay="120">
+              <div class="hero-visual">
+                <div class="hero-orb one"></div>
+                <div class="hero-orb two"></div>
+                <img class="hero-device" src="images/cashly_new.png" alt="Cashly CRM showcase">
+                <div class="floating-note">
+                  <span class="ti-light-bulb"></span>
+                  <h5>Built from lived business experience</h5>
+                  <p>Our product mindset comes from solving workflow friction inside real sales, service, and operations environments.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container-xxl">
+          <div class="split-grid">
+            <div class="glass-panel" data-aos="fade-right">
+              <div class="section-kicker">Our Story</div>
+              <h2 style="font-size: clamp(30px, 4vw, 52px);">We started by fixing the kind of repetitive, high-friction work that slows ambitious teams down.</h2>
+              <p>
+                Cashly began with a clear operational challenge: too much time was being lost to manual steps, disconnected tools, and repetitive administrative work. That pressure created the foundation for Cashly CRM and shaped the broader delivery approach we now bring to client projects.
+              </p>
+              <p style="margin-top: 18px;">
+                Today, Cashly Tech Services applies that same thinking across industries. We design systems that align product experience, internal workflows, automation, APIs, and cloud delivery so companies can operate with more clarity and less overhead.
+              </p>
+            </div>
+
+            <div class="glass-panel" data-aos="fade-left">
+              <div class="section-kicker">What We Bring</div>
+              <ul class="check-list" style="margin-top: 4px;">
+                <li>Consulting-led discovery that focuses on business outcomes, not just feature lists</li>
+                <li>Custom software engineering across web, mobile, backend, and cloud systems</li>
+                <li>API integration, data workflows, and AI-assisted automation with n8n</li>
+                <li>Product thinking shaped by building and operating our own software platform</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="story-grid">
+            <article class="story-card" data-aos="fade-up">
+              <div class="icon"><span class="ti-layout-grid2"></span></div>
+              <h3>Business-first software</h3>
+              <p>We translate operational complexity into clear products, cleaner systems, and better day-to-day execution.</p>
+            </article>
+            <article class="story-card" data-aos="fade-up" data-aos-delay="70">
+              <div class="icon"><span class="ti-cloud-up"></span></div>
+              <h3>Scalable technology choices</h3>
+              <p>We choose stacks and architectures that support growth, maintainability, and practical long-term ownership.</p>
+            </article>
+            <article class="story-card" data-aos="fade-up" data-aos-delay="140">
+              <div class="icon"><span class="ti-settings"></span></div>
+              <h3>Automation with intent</h3>
+              <p>We use AI and workflow orchestration to remove friction, not just to add novelty or technical noise.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container-xxl">
+          <div class="section-intro" data-aos="fade-up">
+            <div>
+              <div class="section-kicker">How We Think</div>
+              <h2>Three principles that shape every product, integration, and delivery roadmap.</h2>
+            </div>
+            <p>These ideas keep our work grounded in business value while still pushing for modern, well-executed technology.</p>
+          </div>
+
+          <div class="value-grid">
+            <article class="value-card" data-aos="fade-up">
+              <div class="icon"><span class="ti-target"></span></div>
+              <h3>Clarity over clutter</h3>
+              <p>We keep systems understandable for the people who will actually use and manage them. Clear software scales better than overbuilt software.</p>
+            </article>
+            <article class="value-card" data-aos="fade-up" data-aos-delay="70">
+              <div class="icon"><span class="ti-loop"></span></div>
+              <h3>Connected workflows over isolated tools</h3>
+              <p>APIs, data, and automation are strongest when they are designed as one operating system for the business instead of disconnected features.</p>
+            </article>
+            <article class="value-card" data-aos="fade-up" data-aos-delay="140">
+              <div class="icon"><span class="ti-pulse"></span></div>
+              <h3>Useful AI over hype</h3>
+              <p>We focus on AI workflows that improve response times, coordination, and throughput in practical ways teams can trust.</p>
+            </article>
+            <article class="value-card" data-aos="fade-up" data-aos-delay="210">
+              <div class="icon"><span class="ti-rocket"></span></div>
+              <h3>Momentum over handoff fatigue</h3>
+              <p>Our goal is to reduce the drag that comes from fragmented teams and ambiguous execution by keeping strategy and build tightly aligned.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container-xxl">
+          <div class="section-intro" data-aos="fade-up">
+            <div>
+              <div class="section-kicker">Our Approach</div>
+              <h2>From operational challenge to scalable software system.</h2>
+            </div>
+            <p>We stay close to the business context so the technology solution is grounded, practical, and ready to evolve.</p>
+          </div>
+
+          <div class="timeline-grid">
+            <article class="timeline-card" data-aos="fade-up">
+              <div class="timeline-step">01</div>
+              <h3>Understand the workflow</h3>
+              <p>We map the business process, bottlenecks, stakeholders, and outcomes before we propose a technical solution.</p>
+            </article>
+            <article class="timeline-card" data-aos="fade-up" data-aos-delay="70">
+              <div class="timeline-step">02</div>
+              <h3>Design the right system</h3>
+              <p>We shape the product flow, architecture, data model, and integration logic around the real environment you operate in.</p>
+            </article>
+            <article class="timeline-card" data-aos="fade-up" data-aos-delay="140">
+              <div class="timeline-step">03</div>
+              <h3>Build, automate, and refine</h3>
+              <p>Engineering, automation, QA, and iteration move together so the final platform is reliable, useful, and ready for scale.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container-xxl">
+          <div class="cta-grid">
+            <div class="cta-panel primary" data-aos="fade-up">
+              <div class="section-kicker">Work With Us</div>
+              <h2>Need a partner who understands both software delivery and operational reality?</h2>
+              <p>We support custom builds, internal systems, CRM platforms, integrations, mobile apps, AI workflows, and cloud modernization for teams that want technology to create measurable leverage.</p>
+              <div class="hero-actions" style="margin-top: 24px;">
+                <a class="button-primary" href="contact.html">Talk to Cashly</a>
+                <a class="button-secondary" href="team.html">Meet the Team</a>
+              </div>
+            </div>
+
+            <div class="cta-panel" data-aos="fade-up" data-aos-delay="90">
+              <div class="section-kicker">Capabilities</div>
+              <ul class="check-list" style="margin-top: 6px;">
+                <li>CRM systems and bespoke software platforms</li>
+                <li>API integration, data architecture, and automation</li>
+                <li>Flutter, React Native, Android, and iOS delivery</li>
+                <li>AWS, Azure, MongoDB, Java, Python, Go, and React</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-block">
+      <div class="container-xxl">
+        <div class="footer-wrap">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a class="brand-lockup" href="index.html">
+                <img src="images/cts_logo.png" alt="Cashly Tech Services logo">
+              </a>
+              <p class="footer-copy">
+                Cashly Tech Services builds modern business software, mobile apps, AI workflows, data systems, and cloud-ready platforms with a sharp focus on execution, usability, and growth.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="footer-title">Contact</h3>
+              <div class="footer-list">
+                <p class="footer-item">
+                  <strong>Email</strong>
+                  <a href="mailto:info@gocashly.io">info@gocashly.io</a>
+                </p>
+                <p class="footer-item">
+                  <strong>Phone</strong>
+                  <a href="tel:+12184133596">+1 218-413-3596</a>
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="footer-title">Office</h3>
+              <div class="footer-list">
+                <p class="footer-item">
+                  <strong>Address</strong>
+                  2896 South Sheridan Way<br>
+                  Oakville, ON L6J 7T4
+                </p>
+                <p class="footer-item">
+                  <strong>Product</strong>
+                  <a href="https://cashlycrm.com" target="_blank" rel="noreferrer">cashlycrm.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>&copy; 2026 Cashly Tech Services. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 850,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 60
+    });
+  </script>
+</body>
+</html>

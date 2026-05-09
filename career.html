@@ -1,0 +1,664 @@
+<!-- 
+THEME: Small Apps | Bootstrap App Landing Template
+VERSION: 1.0.0
+AUTHOR: Themefisher
+
+HOMEPAGE: https://themefisher.com/products/small-apps-free-app-landing-page-template/
+DEMO: https://demo.themefisher.com/small-apps/
+GITHUB: https://github.com/themefisher/Small-Apps-Bootstrap-App-Landing-Template
+
+Get HUGO Version : https://themefisher.com/products/small-apps-hugo-app-landing-theme/
+
+WEBSITE: https://themefisher.com
+TWITTER: https://twitter.com/themefisher
+FACEBOOK: https://www.facebook.com/themefisher
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Cashly</title>
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Bootstrap App Landing Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Small Apps Template v1.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/cashly-logo-nav.png" /><!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+  
+  <!-- PLUGINS CSS STYLE -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/shared-navbar.css">
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+
+<nav class="navbar navbar-expand-lg main-nav fixed-top">
+  <div class="container-xxl">
+    <a class="navbar-brand brand-lockup" href="index.html" aria-label="Cashly Tech Services home">
+      <img src="images/cts_logo.png" alt="Cashly Tech Services logo">
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="ti-menu" style="font-size: 24px; color: #0f172a;"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavigation">
+      <ul class="navbar-nav ml-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown service-dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html#services" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+          <div class="dropdown-menu mega-menu" aria-labelledby="servicesDropdown">
+            <div class="mega-grid">
+              <a class="mega-item" href="custom-software.html"><span class="menu-title">Custom Software &amp; Web</span><span class="menu-copy">Product platforms, dashboards, portals, and internal systems.</span></a>
+              <a class="mega-item" href="mobile-development.html"><span class="menu-title">Mobile Development</span><span class="menu-copy">iOS, Android, native teams, and hybrid app delivery.</span></a>
+              <a class="mega-item" href="native-app-development.html"><span class="menu-title">Native App Development</span><span class="menu-copy">SwiftUI, Jetpack Compose, deeper platform control, and device features.</span></a>
+              <a class="mega-item" href="hybrid-app-development.html"><span class="menu-title">Hybrid App Development</span><span class="menu-copy">Flutter and React Native builds for faster multi-platform launches.</span></a>
+              <a class="mega-item" href="ecommerce-development.html"><span class="menu-title">eCommerce Development</span><span class="menu-copy">Storefronts, checkout flows, subscriptions, and operations.</span></a>
+              <a class="mega-item" href="crm-development.html"><span class="menu-title">CRM Development</span><span class="menu-copy">Sales workflows, servicing visibility, and team automation.</span></a>
+              <a class="mega-item" href="api-integration.html"><span class="menu-title">API Integration</span><span class="menu-copy">Connected systems, partner APIs, middleware, and sync logic.</span></a>
+              <a class="mega-item" href="data-cloud.html"><span class="menu-title">Data &amp; Cloud</span><span class="menu-copy">AWS, Azure, data pipelines, reporting, and secure architecture.</span></a>
+              <a class="mega-item" href="ai-automation.html"><span class="menu-title">AI Workflows &amp; Automation</span><span class="menu-copy">n8n, copilots, routing logic, and human-in-the-loop automation.</span></a>
+              <a class="mega-item" href="seo-web-growth.html"><span class="menu-title">SEO &amp; Web Growth</span><span class="menu-copy">Technical SEO, landing pages, content systems, and conversion lift.</span></a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ml-lg-2"><a class="nav-cta" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2PwLnMIboXJYLmTsCPplmIsfxdOpZLqBosbVhaP4f5xH1Wp7McyVyYGjV9aMC20yGazrkx0koT" target="_blank" rel="noreferrer">Book a Call</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="nav-spacer" aria-hidden="true"></div>
+
+<!-- Page Title Section -->
+<style>
+  .fade-slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 1s ease-out forwards;
+  }
+
+  .fade-slide-up.delay-1 {
+    animation-delay: 0.3s;
+  }
+
+  .fade-slide-up.delay-2 {
+    animation-delay: 0.6s;
+  }
+
+  @keyframes fadeSlideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<!--================================
+=            Page Title            =
+=================================-->
+
+<section class="section page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 m-auto">
+				<!-- Page Title -->
+				<h1>Career</h1>
+				<!-- Page Description -->
+<div class="text-center mx-auto" style="max-width: 800px;">
+  <p>
+    Cashly is a growing fintech SaaS company based in Oakville, Ontario, specializing in tools for mortgage professionals. Their flagship product integrates CRM, AI, and automated workflows automating lead assignment, document collection, deal submissions, and client communications. This has enabled users to reduce manual tasks by around 60%, increase client touchpoints by 150%, and consolidate multiple tech tools into one system.
+  </p>
+</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Page Title  ====-->
+
+
+
+<!--==================================
+=            Career Promo            =
+===================================-->
+<section class="section career-featured pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<!-- written-content -->
+					<div class="content">
+						<!-- Career heading -->
+						<h2>Who we're looking for</h2>
+						<!-- Career Description -->
+						<p>At Cashly, we're building powerful, intelligent tools that simplify and automate the mortgage process and we’re looking for bold, driven people to help us do it.</p>
+					</div>
+					<!-- Promo Video -->
+					<div class="video">
+						<!-- Video Thumb -->
+						<img class="img-fluid shadow" src="images/thumbs/promo-video-thumbnail.jpg" alt="video-thumbnail">
+						<!-- Video Button -->
+						<!-- <div class="video-button video-box">
+							<a href="javascript:void(0)">
+								<i class="ti-control-play" data-video=""></i>
+							</a>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Career Promo  ====-->
+
+<!--=============================
+=            Gallery            =
+==============================-->
+<section class="gallery">
+	<div class="container-fluid p-0">
+		<div class="row no-gutters">
+			<div class="col-md-4">
+				<div class="image">
+					<img data-fancybox="gallery" href="images/gallery/gallery-01.jpg" class="img-fluid" src="images/gallery/gallery-01.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="image">
+					<img data-fancybox="gallery" href="images/gallery/gallery-02.jpg" class="img-fluid" src="images/gallery/gallery-02.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="image">
+					<img data-fancybox="gallery" href="images/gallery/gallery-03.jpg" class="img-fluid" src="images/gallery/gallery-03.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Gallery  ====-->
+
+<!--===============================
+=            Fun Facts            =
+================================-->
+<!-- <section class="company-fun-facts section" >
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h2>Some amenities for you to enjoy</h2>
+			</div>
+		</div>
+		<div class="row">		
+			<div class="col-lg-3 col-md-6"  style="margin-left: 110px;">
+				<div class="fun-fact">
+	
+					<i class="ti-timer"></i>
+					<h3>Flexible hours</h3>
+					<p>let you do your best work—on your terms.</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="fun-fact">
+			
+					<i class="ti-filter"></i>
+					<h3>Free Snacks & Drinks</h3>
+					<p>Value a positive, inclusive workplace—with the little perks that make a big difference (like free snacks & drinks in the office!</p>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6">
+				<div class="fun-fact">
+	
+					<i class="ti-hummer"></i>
+					<h3>4 Working Days</h3>
+					<p>Enjoy a healthier work-life balance with a flexible four-day schedule that prioritizes productivity and well-being.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+<!--====  End of Fun Facts  ====-->
+
+<!--===============================
+=            Job lists            =
+================================-->
+<section class="job-list section pt-0" style="margin-top: 50px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10 m-auto">
+        <div class="block">
+          <div class="title text-center">
+            <h2>Join Our Team</h2>
+            <p>We're building the future of mortgage automation one talented team member at a time.</p>
+          </div>
+
+          <!-- Job Listing: Full Stack Engineer -->
+          <div class="job">
+            <div class="content">
+              <h3>Full Stack Software Engineer</h3>
+              <p>Toronto, Canada (Hybrid)</p>
+            </div>
+            <div class="apply-button">
+              <a href="#" class="btn-main-md" data-toggle="modal" data-target="#fullstack-engineer">View Details</a>
+
+              <!-- Modal -->
+              <div class="modal fade jd-modal" id="fullstack-engineer" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Full Stack Software Engineer</h5>
+                      <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="block-2">
+                        <div class="title"><p>Location</p></div>
+                        <div class="details"><p>Toronto, Canada (Hybrid)</p></div>
+                      </div>
+                      <div class="block-2">
+                        <div class="title"><p>About You</p></div>
+                        <div class="details">
+                          <p>You’re a hands-on developer passionate about building scalable fintech tools that solve real-world problems. You care about clean architecture and efficient workflows.</p>
+                        </div>
+                      </div>
+                      <div class="block-2">
+                        <div class="title"><p>You Should Have</p></div>
+                        <div class="details">
+                          <ul>
+                            <li><span class="ti-forward"></span>3+ years building full stack applications (React, Node.js preferred)</li>
+                            <li><span class="ti-forward"></span>Experience with REST APIs and third-party integrations</li>
+                            <li><span class="ti-forward"></span>Strong knowledge of Git, Docker, and CI/CD pipelines</li>
+                            <li><span class="ti-forward"></span>Comfortable in a startup environment and fast iteration cycles</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="form-title"><h3>Apply Now</h3></div>
+                      <form id="contactForm">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-12">
+                            <input class="form-control main" type="text" name="name" placeholder="Name" required>
+                          </div>
+                          <div class="col-lg-6 col-md-12">
+                            <input class="form-control main" type="email" name="email" placeholder="Email Address" required>
+                          </div>
+                          <div class="col-lg-6 col-md-12">
+                            <input class="form-control main" type="text" name="portfolio" placeholder="LinkedIn / Portfolio" required>
+                          </div>
+                          <div class="col-lg-6 col-md-12">
+                            <input class="form-control main" type="text" name="github" placeholder="GitHub / StackOverflow" required>
+                          </div>
+                          <div class="col-md-12">
+                            <textarea class="form-control main" name="about" rows="6" placeholder="Tell us about yourself"></textarea>
+                          </div>
+                          <div class="col-12 text-right">
+                            <button class="btn btn-main-md" type="submit">Apply Now</button>
+                          </div>
+                          <div class="col-12 mt-2">
+                            <p id="formMessage" style="display: none; min-height: 20px;"></p>
+                          </div>
+                        </div>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Job Listings -->
+          <!-- <div class="job">
+            <div class="content">
+              <h3>DevOps Engineer</h3>
+              <p>Remote – Canada / USA</p>
+            </div>
+            <div class="apply-button">
+              <a href="#" class="btn-main-md" data-toggle="modal" data-target="#fullstack-engineer">View Details</a>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Submit Form to Formspree -->
+<script>
+  const form = document.getElementById('contactForm');
+  const formMessage = document.getElementById('formMessage');
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('https://formspree.io/f/mqapaoqp', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        formMessage.textContent = '✅ Message sent! Thanks for contacting us.';
+        formMessage.style.color = 'green';
+        formMessage.style.display = 'block';
+        form.reset();
+      } else {
+        formMessage.textContent = '❌ Something went wrong. Please try again.';
+        formMessage.style.color = 'red';
+        formMessage.style.display = 'block';
+      }
+    } catch (error) {
+      formMessage.textContent = '⚠️ Network error. Please try again later.';
+      formMessage.style.color = 'red';
+      formMessage.style.display = 'block';
+    }
+  });
+</script>
+
+<!--====  End of Job lists  ====-->
+
+<!--============================
+=            Footer            =
+=============================-->
+<!-- Footer -->
+<!-- Footer -->
+<footer data-aos="fade-up" style="background:#1f1f1f; padding-top:0; padding-bottom: 0; box-shadow: 0 -2px 8px rgba(31, 31, 31, 0.6);">
+  <div class="footer-main">
+    <div class="container">
+      <div class="row align-items-start">
+        
+        <!-- Logo & Social Icons -->
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" data-aos="fade-right">
+          <div class="block text-lg-start text-md-start text-sm-start">
+            <a href="index.html">
+              <img src="images/cashly-logo-nav.png" alt="footer-logo" style="max-height: 60px; filter: brightness(0) invert(1);">
+            </a>
+            <ul class="social-icon list-inline mt-3 mb-0">
+              <li class="list-inline-item">
+                <a href="mailto:info@gocashly.io"><i class="fas fa-envelope"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/company/gocashly/"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Product & Company on Right -->
+<style>
+  /* Custom large right margin */
+  .custom-me-20 {
+    margin-right: 5rem; /* Adjust as needed */
+  }
+</style>
+
+<style>
+  /* Make all footer links white and add hover effect */
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-links a:hover {
+    color: #f58a43; /* Hover color */
+  
+  }
+</style>
+
+<div class="col-lg-8 col-md-12 d-flex justify-content-lg-end justify-content-md-start" 
+     data-aos="fade-up" data-aos-delay="200" style="padding-top: 10px; padding-bottom: 10px;">
+
+  <!-- Product -->
+  <div class="custom-me-20 pe-lg-3">
+
+     <h6 class="mb-3" style="color: #f58a43; font-weight: bold;">Product</h6>
+    <ul class="list-unstyled mb-0 footer-links">
+   <style>
+  .footer-links li a {
+    font-size: 0.85rem; /* smaller size */
+  }
+</style>
+
+<ul class="list-unstyled mb-0 footer-links">
+  <li class="mb-2"><a href="team.html">Teams</a></li>
+  <li class="mb-2"><a href="FAQ.html">FAQs</a></li>
+</ul>
+    </ul>
+  </div>
+
+  <!-- Company -->
+  <div class="ps-lg-4">
+  <h6 class="mb-3" style="color: #f58a43; font-weight: bold;">Company</h6>
+    <ul class="list-unstyled mb-0 footer-links">
+      <li class="mb-2"><a href="about.html">About</a></li>
+      <li class="mb-2"><a href="contact.html">Contact</a></li>
+      <li class="mb-2"><a href="team.html">Team</a></li>
+      <li class="mb-2"><a href="privacy-policy.html">Privacy Policy</a></li>
+    </ul>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer ul li a {
+    color: #000;
+    text-decoration: none;
+  }
+
+</style>
+
+  </div>
+</footer>
+
+
+  <!-- loader  -->
+ <!-- loader -->
+<!-- <div id="page-loader">
+  <div class="loader-content">
+    <img src="images/cashly-logo-nav.png" alt="Cashly Logo" class="logo white-tint spin-logo" />
+    <p class="loader-text">Please wait...</p>
+  </div>
+
+  <style>
+    #page-loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    #page-loader.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .loader-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      width: 100px;
+      z-index: 1;
+    }
+
+ 
+    .spin-logo {
+      animation: spin 4s linear 2; /* slow rotation, 2 times */
+    }
+
+    .loader-text {
+      margin-top: 15px;
+      font-size: 16px;
+      color: rgb(25, 102, 202);
+      font-family: Arial, sans-serif;
+      letter-spacing: 1px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</div>
+
+<script>
+  const loader = document.getElementById('page-loader');
+  const links = document.querySelectorAll('a');
+
+  links.forEach(link => {
+    link.addEventListener('click', function (e) {
+      const href = this.href;
+
+      // Skip if opens in new tab, anchor, or mailto
+      if (
+        link.target === '_blank' ||
+        href.includes('#') ||
+        href.startsWith('mailto:')
+      ) return;
+
+      e.preventDefault();
+      loader.classList.add('active');
+
+      setTimeout(() => {
+        window.location.href = href;
+      }, 500);
+    });
+  });
+
+  window.addEventListener('load', () => {
+    loader.classList.remove('active');
+  });
+</script> -->
+<!-- loader ends  -->
+
+
+
+<!-- Scroll To Top Button -->
+<div class="scroll-top-to" aria-label="Scroll to top" role="button" tabindex="0">
+  <i class="fas fa-angle-up"></i>
+</div>
+
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Script for AOS & Scroll-to-top -->
+<script>
+  // Initialize AOS (Animate On Scroll)
+  AOS.init({
+    duration: 1000,
+    once: true,    // Animate only once when scrolled into view
+  });
+
+  // Scroll to Top Button
+  const scrollBtn = document.querySelector(".scroll-top-to");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      scrollBtn.classList.add("active");
+    } else {
+      scrollBtn.classList.remove("active");
+    }
+  });
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+<!-- Scroll To Top Button Styles -->
+<style>
+  .scroll-top-to {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #f58a43;
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+  }
+  .scroll-top-to.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* Optional: hover effect */
+  .scroll-top-to:hover {
+    background-color: #1e56b0;
+  }
+</style>
+
+
+<!-- footer ends  -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+  <!-- google map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=REMOVED"></script>
+  <script src="plugins/google-map/gmap.js"></script>
+  
+  <script src="js/script.js"></script>
+</body>
+
+</html>

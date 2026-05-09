@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cashly</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Bootstrap App Landing Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Small Apps Template v1.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/cashly-logo-nav.png" />
+  
+  <!-- PLUGINS CSS STYLE -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Lottie Animation -->
+  <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/shared-navbar.css">
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+
+<nav class="navbar navbar-expand-lg main-nav fixed-top">
+  <div class="container-xxl">
+    <a class="navbar-brand brand-lockup" href="index.html" aria-label="Cashly Tech Services home">
+      <img src="images/cts_logo.png" alt="Cashly Tech Services logo">
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="ti-menu" style="font-size: 24px; color: #0f172a;"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavigation">
+      <ul class="navbar-nav ml-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown service-dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html#services" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+          <div class="dropdown-menu mega-menu" aria-labelledby="servicesDropdown">
+            <div class="mega-grid">
+              <a class="mega-item" href="custom-software.html"><span class="menu-title">Custom Software &amp; Web</span><span class="menu-copy">Product platforms, dashboards, portals, and internal systems.</span></a>
+              <a class="mega-item" href="mobile-development.html"><span class="menu-title">Mobile Development</span><span class="menu-copy">iOS, Android, native teams, and hybrid app delivery.</span></a>
+              <a class="mega-item" href="native-app-development.html"><span class="menu-title">Native App Development</span><span class="menu-copy">SwiftUI, Jetpack Compose, deeper platform control, and device features.</span></a>
+              <a class="mega-item" href="hybrid-app-development.html"><span class="menu-title">Hybrid App Development</span><span class="menu-copy">Flutter and React Native builds for faster multi-platform launches.</span></a>
+              <a class="mega-item" href="ecommerce-development.html"><span class="menu-title">eCommerce Development</span><span class="menu-copy">Storefronts, checkout flows, subscriptions, and operations.</span></a>
+              <a class="mega-item" href="crm-development.html"><span class="menu-title">CRM Development</span><span class="menu-copy">Sales workflows, servicing visibility, and team automation.</span></a>
+              <a class="mega-item" href="api-integration.html"><span class="menu-title">API Integration</span><span class="menu-copy">Connected systems, partner APIs, middleware, and sync logic.</span></a>
+              <a class="mega-item" href="data-cloud.html"><span class="menu-title">Data &amp; Cloud</span><span class="menu-copy">AWS, Azure, data pipelines, reporting, and secure architecture.</span></a>
+              <a class="mega-item" href="ai-automation.html"><span class="menu-title">AI Workflows &amp; Automation</span><span class="menu-copy">n8n, copilots, routing logic, and human-in-the-loop automation.</span></a>
+              <a class="mega-item" href="seo-web-growth.html"><span class="menu-title">SEO &amp; Web Growth</span><span class="menu-copy">Technical SEO, landing pages, content systems, and conversion lift.</span></a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ml-lg-2"><a class="nav-cta" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2PwLnMIboXJYLmTsCPplmIsfxdOpZLqBosbVhaP4f5xH1Wp7McyVyYGjV9aMC20yGazrkx0koT" target="_blank" rel="noreferrer">Book a Call</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="nav-spacer" aria-hidden="true"></div>
+
+<!-- Page Title Section -->
+<style>
+  .fade-slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 1s ease-out forwards;
+  }
+
+  .fade-slide-up.delay-1 {
+    animation-delay: 0.3s;
+  }
+
+  .fade-slide-up.delay-2 {
+    animation-delay: 0.6s;
+  }
+
+  @keyframes fadeSlideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<!-- First & Second Sections Merged -->
+
+<section class="section gradient-banner">
+  <div class="shapes-container">
+    <div class="shape" data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="100"></div>
+    <div class="shape" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100"></div>
+    <div class="shape" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200"></div>
+    <div class="shape" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"></div>
+    <div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
+    <div class="shape" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100"></div>
+    <div class="shape" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"></div>
+    <div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="200"></div>
+    <div class="shape" data-aos="fade-down-right" data-aos-duration="500" data-aos-delay="100"></div>
+    <div class="shape" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="500"></div>
+    <div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="200"></div>
+    <div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="100"></div>
+    <div class="shape" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"></div>
+    <div class="shape" data-aos="fade-down" data-aos-duration="500" data-aos-delay="0"></div>
+    <div class="shape" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="100"></div>
+    <div class="shape" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="0"></div>
+  </div>
+   <div class="container">
+    <div class="row">
+      <div class="col-sm-8 m-auto text-center">
+
+        <!-- Animated Heading -->
+        <h1 
+          class="mb-4 fw-bold" 
+          style="font-weight: 600; color: white;" 
+          data-aos="fade-slide-up" 
+          data-aos-duration="1000"
+        >
+          Blogs
+        </h1>
+
+        <!-- Animated Lottie -->
+        <div 
+          class="text-center mb-4" 
+          data-aos="fade-slide-up" 
+          data-aos-delay="200" 
+          data-aos-duration="1000"
+        >
+          <lottie-player 
+            src="https://assets2.lottiefiles.com/packages/lf20_2glqweqs.json" 
+            background="transparent"  
+            speed="1"  
+            style="max-width: 300px; margin: 0 auto;"  
+            loop  
+            autoplay>
+          </lottie-player>
+        </div>
+
+        <!-- Animated Paragraph -->
+        <p 
+          class="mb-4 fw-bold" 
+          style="color: white;" 
+          data-aos="fade-slide-up" 
+          data-aos-delay="400" 
+          data-aos-duration="1000"
+        >
+          Welcome to the Cashly Blog — your go-to source for the latest insights on alternative lending, financial empowerment, and fintech innovation. At Cashly, we’re on a mission to redefine access to capital for freelancers, self-employed professionals, and small business owners. Here, you’ll find expert tips on managing your finances, staying ahead of industry trends, leveraging AI-powered tools, and making smarter funding decisions. Whether you're a mortgage broker, a gig worker, or simply curious about the future of finance, our blog delivers value-packed content tailored to help you grow. Stay informed. Stay empowered. Stay Cashly.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Blog Content -->
+<div class="d-flex justify-content-center">
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Blog Post 1 -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="p-3 hover-zoom" style="background-color: #f8f9fa; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); border-radius: 30px;">
+          <div class="card mb-4 border-0">
+            <img src="images/blog/image.png" class="card-img-top" alt="AI in Mortgages" style="object-fit: cover; max-height: 300px;">
+            <div class="card-body px-4 py-3">
+              <h2 class="card-title h4 mb-3 text-center" style="color: #1E56B0;">AI in Mortgages</h2>
+              <p class="text-center mb-3" style="color: #1E56B0;">July 18, 2025 by <strong>Cashly Team</strong></p>
+              <p class="card-text fw-semibold text-center" style="color: #1E56B0; margin-bottom: 20px;">
+                Mortgage-Specific Automation Reduces Manual Work
+              </p>
+              <a class="btn btn-primary btn-sm d-block mx-auto" href="blog-single.html" style="max-width: 150px;">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="p-3 hover-zoom" style="background-color: #f8f9fa; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); border-radius: 30px;">
+          <div class="card mb-4 border-0">
+            <img src="images/blog/image.png" class="card-img-top" alt="AI in Mortgages" style="object-fit: cover; max-height: 300px;">
+            <div class="card-body px-4 py-3">
+              <h2 class="card-title h4 mb-3 text-center" style="color: #1E56B0;">AI in Mortgages</h2>
+              <p class="text-center mb-3" style="color: #1E56B0;">July 18, 2025 by <strong>Cashly Team</strong></p>
+              <p class="card-text fw-semibold text-center" style="color: #1E56B0; margin-bottom: 20px;">
+                Mortgage-Specific Automation Reduces Manual Work
+              </p>
+              <a class="btn btn-primary btn-sm d-block mx-auto" href="blog-single.html" style="max-width: 150px;">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Pagination -->
+<nav class="pagination-nav mt-4 text-center">
+  <ul class="pagination justify-content-center"> 
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true"><i class="ti-angle-right"></i></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Footer -->
+<footer data-aos="fade-up" style="background:#f8f9fa; padding: 0px 0; box-shadow: 0 -2px 8px rgba(0,0,0,0.1);">
+  <div class="footer-main">
+    <div class="container">
+      <div class="row align-items-start">
+        <!-- Logo and Social Icons -->
+        <div class="col-lg-4 col-md-12 m-md-auto text-center mb-2 mb-lg-0" data-aos="fade-right" style="padding-top: 10px;">
+          <div class="block">
+            <a href="index.html">
+              <img src="images/cashly-logo-nav.png" alt="footer-logo" style="max-height: 60px; filter: brightness(0) invert(1);">
+            </a>
+            <ul class="social-icon list-inline mt-2">
+              <li class="list-inline-item">
+                <a href="mailto:info@gocashly.io"><i class="fas fa-envelope"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/company/gocashly/"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Product Links -->
+        <div class="col-lg-2 col-md-3 col-6" data-aos="fade-up" data-aos-delay="200" style="padding-top: 5px;">
+          <div class="block-2">
+            <h6>Product</h6>
+            <ul>
+              <li><a href="team.html">Teams</a></li>
+              <li><a href="blog.html">Blogs</a></li>
+              <li><a href="FAQ.html">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Company Links -->
+        <div class="col-lg-2 col-md-3 col-6" data-aos="fade-up" data-aos-delay="400" style="padding-top: 5px;">
+          <div class="block-2">
+            <h6>Company</h6>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</footer>
+<!-- Scroll To Top Button -->
+<div class="scroll-top-to" aria-label="Scroll to top" role="button" tabindex="0">
+  <i class="fas fa-angle-up"></i>
+</div>
+
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Script for AOS & Scroll-to-top -->
+<script>
+  // Initialize AOS (Animate On Scroll)
+  AOS.init({
+    duration: 1000,
+    once: true,    // Animate only once when scrolled into view
+  });
+
+  // Scroll to Top Button
+  const scrollBtn = document.querySelector(".scroll-top-to");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      scrollBtn.classList.add("active");
+    } else {
+      scrollBtn.classList.remove("active");
+    }
+  });
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+<!-- Scroll To Top Button Styles -->
+<style>
+  .scroll-top-to {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #f58a43;
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+  }
+  .scroll-top-to.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* Optional: hover effect */
+  .scroll-top-to:hover {
+    background-color: #1e56b0;
+  }
+</style>
+
+
+<!-- Scroll to Top -->
+<div class="scroll-top-to">
+  <i class="ti-angle-up"></i>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<!-- scroll animation  -->
+<script>
+  AOS.init({
+    duration: 1000,   // animation duration in ms
+    once: true        // animate only once when scrolling down
+  });
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+<!-- JS Scripts -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+<script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+<script src="plugins/aos/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
