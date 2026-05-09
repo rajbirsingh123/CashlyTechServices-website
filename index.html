@@ -707,6 +707,258 @@
         linear-gradient(135deg, #ffffff 0%, #f4f8ff 100%);
     }
 
+    .why-layout,
+    .why-grid,
+    .trust-metrics,
+    .case-grid,
+    .faq-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .why-layout {
+      grid-template-columns: 0.92fr 1.08fr;
+      align-items: stretch;
+    }
+
+    .founder-proof {
+      padding: 32px;
+    }
+
+    .founder-proof h3,
+    .why-card h3,
+    .case-card h3,
+    .metric-card h3,
+    .faq-item summary {
+      margin-bottom: 12px;
+    }
+
+    .founder-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+
+    .founder-mini {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      padding: 14px;
+      border-radius: 20px;
+      background: rgba(53, 133, 208, 0.06);
+      border: 1px solid rgba(53, 133, 208, 0.1);
+    }
+
+    .founder-mini img {
+      width: 68px;
+      height: 68px;
+      border-radius: 20px;
+      object-fit: cover;
+      background: linear-gradient(180deg, #ffffff, #edf3ff);
+      padding: 8px;
+      flex-shrink: 0;
+    }
+
+    .founder-mini strong,
+    .proof-chip strong {
+      display: block;
+      color: var(--text);
+      font-size: 16px;
+    }
+
+    .founder-mini span,
+    .proof-chip span,
+    .metric-card p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .proof-chip-row {
+      display: grid;
+      gap: 14px;
+    }
+
+    .proof-chip {
+      padding: 16px 18px;
+      border-radius: 20px;
+      background: rgba(10, 18, 67, 0.04);
+      border: 1px solid rgba(10, 18, 67, 0.08);
+    }
+
+    .why-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .why-card,
+    .metric-card,
+    .case-card,
+    .faq-item {
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+    }
+
+    .why-card,
+    .metric-card,
+    .case-card {
+      padding: 28px;
+    }
+
+    .why-card .icon,
+    .case-card .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      margin-bottom: 18px;
+      font-size: 20px;
+      color: var(--primary);
+      background: linear-gradient(135deg, rgba(53, 133, 208, 0.1), rgba(158, 198, 236, 0.16));
+    }
+
+    .trust-metrics {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-top: 22px;
+    }
+
+    .metric-card .metric-number {
+      display: block;
+      margin-bottom: 10px;
+      font-size: clamp(32px, 3vw, 42px);
+      line-height: 1;
+      color: var(--primary-deep);
+      font-weight: 800;
+    }
+
+    .metric-card h3 {
+      font-size: 20px;
+    }
+
+    .case-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .case-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .case-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+    }
+
+    .case-kicker {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+      background: rgba(53, 133, 208, 0.08);
+      color: var(--primary-deep);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .case-card .check-list {
+      margin-top: 18px;
+    }
+
+    .case-note {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(10, 18, 67, 0.08);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary-deep);
+    }
+
+    .faq-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .faq-item {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 24px 28px;
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: "+";
+      float: right;
+      color: var(--primary);
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .faq-item[open] summary::after {
+      content: "\2212";
+    }
+
+    .faq-item p {
+      margin: 0;
+      padding: 0 28px 24px;
+    }
+
+    .premium-cta {
+      padding: 46px;
+      border-radius: var(--radius-xl);
+      background:
+        radial-gradient(circle at top right, rgba(86, 196, 255, 0.22), transparent 32%),
+        linear-gradient(135deg, rgba(10, 18, 67, 0.97), rgba(17, 72, 200, 0.92)),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0));
+      color: #ffffff;
+      box-shadow: 0 32px 70px rgba(10, 18, 67, 0.28);
+    }
+
+    .premium-cta h2,
+    .premium-cta p,
+    .premium-cta .section-kicker,
+    .premium-cta strong {
+      color: #ffffff;
+    }
+
+    .premium-cta .section-kicker {
+      opacity: 0.78;
+    }
+
+    .premium-cta p {
+      max-width: 760px;
+    }
+
+    .premium-cta-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 22px;
+      color: rgba(255, 255, 255, 0.78);
+      font-weight: 700;
+    }
+
     .footer-block {
       margin-top: 32px;
       padding: 0 0 34px;
@@ -795,12 +1047,17 @@
 
     @media (max-width: 1199px) {
       .services-grid,
-      .process-grid {
+      .process-grid,
+      .case-grid,
+      .trust-metrics {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .industry-grid,
-      .stack-grid {
+      .stack-grid,
+      .why-layout,
+      .why-grid,
+      .faq-grid {
         grid-template-columns: 1fr;
       }
 
@@ -870,6 +1127,10 @@
         border-radius: 24px;
         transform: rotateX(4deg) rotateY(-5deg) translateZ(12px);
       }
+
+      .founder-row {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 767px) {
@@ -891,7 +1152,10 @@
 
       .services-grid,
       .process-grid,
-      .industry-grid {
+      .industry-grid,
+      .trust-metrics,
+      .case-grid,
+      .faq-grid {
         grid-template-columns: 1fr;
       }
 
@@ -914,6 +1178,10 @@
 
       .footer-bottom p + p {
         margin-top: 10px;
+      }
+
+      .premium-cta {
+        padding: 32px 24px;
       }
     }
   </style>
@@ -997,6 +1265,99 @@
         </div>
       </section>
 
+      <section class="section" id="why-cashly">
+        <div class="container-xxl">
+          <div class="section-intro" data-aos="fade-up">
+            <div>
+              <div class="section-kicker">Why Cashly</div>
+              <h2>A software partner that combines product discipline, operational context, and founder-level accountability.</h2>
+            </div>
+          </div>
+
+          <div class="why-layout">
+            <div class="glass-panel founder-proof" data-aos="fade-right">
+              <div class="section-kicker">Trust Strip</div>
+              <h3>Founder-led from requirements to release.</h3>
+              <p>Cashly is not a handoff-heavy delivery model. Product thinking, workflow design, technical direction, and delivery oversight stay close together so decisions move faster and software stays aligned with the actual business problem.</p>
+
+              <div class="founder-row">
+                <div class="founder-mini">
+                  <img src="images/team/pavit.png" alt="Pavit Paul">
+                  <div>
+                    <strong>Pavit Paul</strong>
+                    <span>Founder-led product and business direction grounded in real operating workflows.</span>
+                  </div>
+                </div>
+                <div class="founder-mini">
+                  <img src="images/team/vlad.png" alt="Vladimir Belsch">
+                  <div>
+                    <strong>Vladimir Belsch</strong>
+                    <span>Technical execution shaped around dependable delivery, systems thinking, and product quality.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="proof-chip-row">
+                <div class="proof-chip">
+                  <strong>Flagship product in market</strong>
+                  <span>Cashly CRM gives the company real product ownership experience, not just client-services positioning.</span>
+                </div>
+                <div class="proof-chip">
+                  <strong>Workflow-native software design</strong>
+                  <span>We build around servicing steps, internal coordination, status changes, handoffs, and automation logic.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="why-grid">
+              <article class="why-card" data-aos="fade-up">
+                <div class="icon"><span class="ti-target"></span></div>
+                <h3>Business-first scoping</h3>
+                <p>We start with the workflow and outcome, not a stack-first pitch. That keeps scope grounded and reduces wasted build cycles.</p>
+              </article>
+              <article class="why-card" data-aos="fade-up" data-aos-delay="70">
+                <div class="icon"><span class="ti-link"></span></div>
+                <h3>Connected systems thinking</h3>
+                <p>Apps, automations, APIs, dashboards, and cloud pieces are designed as one operating layer instead of separate projects.</p>
+              </article>
+              <article class="why-card" data-aos="fade-up" data-aos-delay="140">
+                <div class="icon"><span class="ti-panel"></span></div>
+                <h3>Product clarity under pressure</h3>
+                <p>We make interfaces and workflows easier to follow for the people using them every day, especially in high-touch operational environments.</p>
+              </article>
+              <article class="why-card" data-aos="fade-up" data-aos-delay="210">
+                <div class="icon"><span class="ti-rocket"></span></div>
+                <h3>Execution without handoff fatigue</h3>
+                <p>Discovery, UX, engineering, launch planning, and iteration stay tightly aligned so momentum is not lost between layers.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="trust-metrics">
+            <article class="metric-card" data-aos="fade-up">
+              <span class="metric-number">10</span>
+              <h3>Service lines</h3>
+              <p>Coverage across custom software, mobile, AI workflows, API integration, CRM, data, cloud, and growth systems.</p>
+            </article>
+            <article class="metric-card" data-aos="fade-up" data-aos-delay="70">
+              <span class="metric-number">1</span>
+              <h3>Flagship product</h3>
+              <p>Cashly CRM gives us live product context around iteration, adoption, workflow design, and operational usefulness.</p>
+            </article>
+            <article class="metric-card" data-aos="fade-up" data-aos-delay="140">
+              <span class="metric-number">2</span>
+              <h3>Founders in delivery</h3>
+              <p>Business direction and technical execution stay close instead of being split across a disconnected chain of approvals.</p>
+            </article>
+            <article class="metric-card" data-aos="fade-up" data-aos-delay="210">
+              <span class="metric-number">5</span>
+              <h3>Delivery stages</h3>
+              <p>A visible process from discovery through launch and optimization, built to keep projects understandable and accountable.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="services">
         <div class="container-xxl">
           <div class="section-intro" data-aos="fade-up">
@@ -1058,6 +1419,56 @@
               <h3>SEO &amp; Web Growth</h3>
               <p>Technical SEO, landing pages, content systems, and performance improvements that support pipeline growth.</p>
             </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="case-studies">
+        <div class="container-xxl">
+          <div class="section-intro" data-aos="fade-up">
+            <div>
+              <div class="section-kicker">Proof & Examples</div>
+              <h2>Product proof, real workflow context, and delivery patterns that show how we think.</h2>
+            </div>
+            <p>We are intentionally careful not to fake client proof. Instead, we show the real product work we own and the delivery patterns we repeatedly solve well.</p>
+          </div>
+
+          <div class="case-grid">
+            <article class="case-card" data-aos="fade-up">
+              <div class="case-kicker">Flagship Product</div>
+              <h3>Cashly CRM</h3>
+              <p>Cashly CRM is our clearest proof that we can move from a painful workflow problem to a structured software product built for daily operational use.</p>
+              <ul class="check-list">
+                <li>Built around high-touch mortgage and servicing workflows</li>
+                <li>Designed for visibility, follow-up discipline, and cleaner coordination</li>
+                <li>Combines product UX, operational logic, and automation thinking</li>
+              </ul>
+              <div class="case-note">Live product proof with real workflow ownership.</div>
+            </article>
+
+            <article class="case-card" data-aos="fade-up" data-aos-delay="80">
+              <div class="case-kicker">Representative Delivery Pattern</div>
+              <h3>Custom servicing and portal systems</h3>
+              <p>For operations-heavy teams, we turn fragmented spreadsheets, inboxes, approvals, and status updates into structured platforms with cleaner handoffs.</p>
+              <ul class="check-list">
+                <li>Dashboards, portals, internal tools, and role-based workflows</li>
+                <li>API integrations and status-driven process visibility</li>
+                <li>Fewer manual steps and less ambiguity between teams</li>
+              </ul>
+              <div class="case-note">Best fit for businesses with repetitive process friction.</div>
+            </article>
+
+            <article class="case-card" data-aos="fade-up" data-aos-delay="160">
+              <div class="case-kicker">Product In Development</div>
+              <h3>Lender matching with graph-based routing</h3>
+              <p>Our next product direction explores lender matching through route logic inspired by shortest-path and graph-based decision systems so recommendations stay fast, structured, and explainable.</p>
+              <ul class="check-list">
+                <li>Matching logic designed around structured constraints and partner fit</li>
+                <li>Explainable routing paths instead of black-box decision making</li>
+                <li>Built for teams that need both speed and operational clarity</li>
+              </ul>
+              <div class="case-note">A real product direction, not decorative “AI” positioning.</div>
+            </article>
           </div>
         </div>
       </section>
@@ -1250,29 +1661,59 @@
         </div>
       </section>
 
+      <section class="section" id="faq">
+        <div class="container-xxl">
+          <div class="section-intro" data-aos="fade-up">
+            <div>
+              <div class="section-kicker">FAQ</div>
+              <h2>Questions teams usually ask before starting a software engagement with us.</h2>
+            </div>
+            <p>The goal is to make the first conversation easier. You do not need a full PRD or locked scope to get useful direction from us.</p>
+          </div>
+
+          <div class="faq-grid">
+            <details class="faq-item" data-aos="fade-up">
+              <summary>Do we need a full specification before we contact you?</summary>
+              <p>No. A rough workflow problem, product direction, or integration need is enough to start. We can help shape scope, priorities, and the right build path from there.</p>
+            </details>
+            <details class="faq-item" data-aos="fade-up" data-aos-delay="60">
+              <summary>Can you work on both product design and engineering?</summary>
+              <p>Yes. We handle product thinking, workflow design, technical planning, frontend, backend, integrations, automation, and launch support as one connected delivery effort.</p>
+            </details>
+            <details class="faq-item" data-aos="fade-up" data-aos-delay="120">
+              <summary>What kinds of projects are the best fit for Cashly?</summary>
+              <p>We are a strong fit for custom software, internal tools, CRM systems, workflow-heavy portals, data and API projects, AI-enabled automation, and product modernization work.</p>
+            </details>
+            <details class="faq-item" data-aos="fade-up" data-aos-delay="180">
+              <summary>Do you only work in mortgage and finance?</summary>
+              <p>No. Mortgage and operational workflow experience shaped our product mindset, but the delivery model applies across eCommerce, healthcare, startups, service businesses, and other operations-heavy environments.</p>
+            </details>
+            <details class="faq-item" data-aos="fade-up">
+              <summary>Can you join as a dedicated product and engineering team?</summary>
+              <p>Yes. We can start with a defined project scope or act as a focused execution team across discovery, UX, development, QA, automation, and launch.</p>
+            </details>
+            <details class="faq-item" data-aos="fade-up" data-aos-delay="60">
+              <summary>What should we bring to the first call?</summary>
+              <p>Bring the business challenge, the workflow friction, the systems involved, the team using it, and the outcome you want. That is enough for a productive first conversation.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="contact">
         <div class="container-xxl">
-          <div class="cta-strip">
-            <div class="cta-panel primary" data-aos="fade-up">
-              <div class="section-kicker">Start Here</div>
-              <h2>Looking for a consulting-led software partner for your next transformation project?</h2>
-              <p>Let’s define the right roadmap for your software, cloud, data, automation, or mobile initiative and turn it into a practical delivery plan.</p>
-              <div class="hero-actions" style="margin-bottom: 0; margin-top: 24px;">
-                <a class="button-primary" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2PwLnMIboXJYLmTsCPplmIsfxdOpZLqBosbVhaP4f5xH1Wp7McyVyYGjV9aMC20yGazrkx0koT" target="_blank" rel="noreferrer">Book a Discovery Call</a>
-                <a class="button-secondary" href="https://cashlycrm.com" target="_blank" rel="noreferrer">View Product</a>
-              </div>
+          <div class="premium-cta" data-aos="fade-up">
+            <div class="section-kicker">Start Here</div>
+            <h2>Ready to turn a messy workflow, disconnected system, or product idea into a clear software roadmap?</h2>
+            <p>Bring the operational problem, product direction, or transformation goal. We will help define the right scope, system shape, and delivery path without wasting time on a bloated discovery cycle.</p>
+            <div class="hero-actions" style="margin-bottom: 0; margin-top: 28px;">
+              <a class="button-primary" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2PwLnMIboXJYLmTsCPplmIsfxdOpZLqBosbVhaP4f5xH1Wp7McyVyYGjV9aMC20yGazrkx0koT" target="_blank" rel="noreferrer">Book a Discovery Call</a>
             </div>
-
-            <div class="cta-panel" data-aos="fade-up" data-aos-delay="90">
-              <div class="section-kicker">What You Can Bring</div>
-              <h3>A clear problem statement is enough to begin.</h3>
-              <p>You do not need a finished specification. Bring the business challenge, integration gap, or product vision and we will shape the right scope together.</p>
-              <ul class="check-list">
-                <li>Digital transformation and modernization goals</li>
-                <li>CRM, portal, data, or dashboard requirements</li>
-                <li>API integration, AI workflow, or automation needs</li>
-                <li>Mobile, cloud, or eCommerce delivery plans</li>
-              </ul>
+            <div class="premium-cta-meta">
+              <strong>Custom software</strong>
+              <strong>CRM &amp; workflows</strong>
+              <strong>AI automation</strong>
+              <strong>Cloud &amp; integrations</strong>
             </div>
           </div>
         </div>
